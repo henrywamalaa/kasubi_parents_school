@@ -1,0 +1,1524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Partnerships at Kasubi Parents Secondary School - Partner with us to support quality education, sponsor students, and contribute to community development in Rubaga Division, Kampala, Uganda.">
+    <title>Partnerships | Kasubi Parents Secondary School</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        /* ===== CSS VARIABLES ===== */
+        :root {
+            --purple: #7B4B9A;
+            --purple-dark: #5C3575;
+            --purple-light: #9B6BB5;
+            --purple-pale: #F3EDF7;
+            --grey: #6B7280;
+            --grey-light: #F5F6F8;
+            --grey-dark: #374151;
+            --white: #FFFFFF;
+            --off-white: #FAFAFA;
+            --text-dark: #1F2937;
+            --text-body: #4B5563;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+            --shadow-md: 0 4px 16px rgba(0,0,0,0.10);
+            --shadow-lg: 0 10px 40px rgba(0,0,0,0.12);
+            --radius: 12px;
+            --radius-sm: 8px;
+            --transition: all 0.3s ease;
+        }
+
+        /* ===== RESET & BASE ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--text-body);
+            background-color: var(--white);
+            line-height: 1.7;
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            color: var(--text-dark);
+            line-height: 1.25;
+            font-weight: 700;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .section-padding {
+            padding: 90px 0;
+        }
+
+        .section-padding-sm {
+            padding: 60px 0;
+        }
+
+        /* ===== TOP BAR ===== */
+        .top-bar {
+            background-color: var(--purple-dark);
+            color: var(--white);
+            padding: 10px 0;
+            font-size: 0.85rem;
+        }
+
+        .top-bar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .top-bar a {
+            color: rgba(255,255,255,0.9);
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .top-bar a:hover {
+            color: var(--white);
+        }
+
+        .top-bar-left {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .top-bar-right {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+        }
+
+        .top-bar-right a {
+            font-size: 0.95rem;
+        }
+
+        .top-bar-right a:hover {
+            transform: translateY(-1px);
+        }
+
+        /* ===== NAVIGATION ===== */
+        .navbar {
+            background-color: var(--white);
+            box-shadow: var(--shadow-sm);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 24px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, var(--purple), var(--purple-light));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.4rem;
+            font-weight: 800;
+            font-family: 'Playfair Display', serif;
+            flex-shrink: 0;
+        }
+
+        .logo-text h2 {
+            font-size: 1.15rem;
+            font-weight: 800;
+            color: var(--purple-dark);
+            line-height: 1.2;
+        }
+
+        .logo-text span {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 500;
+            color: var(--grey);
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .nav-menu a {
+            padding: 8px 14px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--grey-dark);
+            border-radius: var(--radius-sm);
+            position: relative;
+        }
+
+        .nav-menu a:hover,
+        .nav-menu a.active {
+            color: var(--purple);
+            background-color: var(--purple-pale);
+        }
+
+        .nav-cta {
+            background-color: var(--purple) !important;
+            color: var(--white) !important;
+            padding: 10px 22px !important;
+            border-radius: 50px !important;
+            font-weight: 600 !important;
+            margin-left: 8px;
+        }
+
+        .nav-cta:hover {
+            background-color: var(--purple-dark) !important;
+            transform: translateY(-1px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .hamburger {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--purple-dark);
+            cursor: pointer;
+            padding: 8px;
+        }
+
+        /* ===== PAGE HERO ===== */
+        .page-hero {
+            background: linear-gradient(135deg, rgba(92, 53, 117, 0.93), rgba(123, 75, 154, 0.88)), url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1600&q=80') center/cover no-repeat;
+            color: var(--white);
+            padding: 100px 0 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .page-hero::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 60px;
+            background: linear-gradient(to top, var(--white), transparent);
+            pointer-events: none;
+        }
+
+        .page-hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .page-hero h1 {
+            font-size: 3rem;
+            color: var(--white);
+            margin-bottom: 16px;
+            letter-spacing: -0.5px;
+        }
+
+        .page-hero p {
+            font-size: 1.1rem;
+            color: rgba(255,255,255,0.9);
+            max-width: 650px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        .breadcrumb {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+            font-size: 0.85rem;
+            color: rgba(255,255,255,0.7);
+        }
+
+        .breadcrumb a {
+            color: rgba(255,255,255,0.8);
+        }
+
+        .breadcrumb a:hover {
+            color: var(--white);
+        }
+
+        .breadcrumb i {
+            font-size: 0.6rem;
+        }
+
+        /* ===== SECTION HEADERS ===== */
+        .section-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 56px;
+        }
+
+        .section-label {
+            display: inline-block;
+            background-color: var(--purple-pale);
+            color: var(--purple);
+            padding: 6px 18px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+
+        .section-header h2 {
+            font-size: 2.4rem;
+            margin-bottom: 16px;
+            color: var(--text-dark);
+        }
+
+        .section-header p {
+            font-size: 1.05rem;
+            color: var(--grey);
+        }
+
+        /* ===== INTRO SECTION ===== */
+        .intro-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .intro-text h2 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+        }
+
+        .intro-text p {
+            margin-bottom: 18px;
+            font-size: 1.02rem;
+        }
+
+        .intro-image {
+            position: relative;
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .intro-image img {
+            width: 100%;
+            height: 460px;
+            object-fit: cover;
+        }
+
+        .intro-image::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: 20px;
+            right: -20px;
+            bottom: 20px;
+            border: 3px solid var(--purple-light);
+            border-radius: var(--radius);
+            z-index: -1;
+        }
+
+        /* ===== PARTNERSHIP TYPES ===== */
+        .types-section {
+            background-color: var(--grey-light);
+        }
+
+        .types-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .type-card {
+            background-color: var(--white);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            border: 1px solid rgba(0,0,0,0.04);
+        }
+
+        .type-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-lg);
+            border-color: rgba(123, 75, 154, 0.2);
+        }
+
+        .type-image {
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .type-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .type-card:hover .type-image img {
+            transform: scale(1.06);
+        }
+
+        .type-icon-badge {
+            position: absolute;
+            bottom: -24px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            background: linear-gradient(135deg, var(--purple), var(--purple-light));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.3rem;
+            box-shadow: var(--shadow-md);
+            z-index: 2;
+        }
+
+        .type-content {
+            padding: 34px 26px 28px;
+        }
+
+        .type-content h3 {
+            font-size: 1.2rem;
+            margin-bottom: 12px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+        }
+
+        .type-content p {
+            font-size: 0.92rem;
+            color: var(--grey);
+            line-height: 1.7;
+            margin-bottom: 16px;
+        }
+
+        .type-list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .type-list li {
+            font-size: 0.88rem;
+            color: var(--text-body);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .type-list li i {
+            color: var(--purple);
+            font-size: 0.7rem;
+        }
+
+        /* ===== BENEFITS ===== */
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .benefits-image {
+            position: relative;
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .benefits-image img {
+            width: 100%;
+            height: 480px;
+            object-fit: cover;
+        }
+
+        .benefits-image::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            right: 20px;
+            bottom: 20px;
+            border: 3px solid var(--purple-light);
+            border-radius: var(--radius);
+            z-index: -1;
+        }
+
+        .benefits-text h2 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+        }
+
+        .benefits-text p {
+            margin-bottom: 24px;
+            font-size: 1.02rem;
+        }
+
+        .benefit-items {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .benefit-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 18px;
+            padding: 20px 22px;
+            background-color: var(--grey-light);
+            border-radius: var(--radius);
+            transition: var(--transition);
+            border-left: 4px solid var(--purple);
+        }
+
+        .benefit-item:hover {
+            background-color: var(--purple-pale);
+            transform: translateX(6px);
+        }
+
+        .benefit-item i {
+            color: var(--purple);
+            font-size: 1.3rem;
+            margin-top: 3px;
+            flex-shrink: 0;
+        }
+
+        .benefit-item h4 {
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 4px;
+            color: var(--text-dark);
+        }
+
+        .benefit-item p {
+            font-size: 0.9rem;
+            color: var(--grey);
+            margin: 0;
+        }
+
+        /* ===== CURRENT PARTNERS ===== */
+        .partners-section {
+            background: linear-gradient(135deg, rgba(92, 53, 117, 0.95), rgba(123, 75, 154, 0.9)), url('https://images.unsplash.com/photo-1552664730-d307ca884978?w=1600&q=80') center/cover no-repeat fixed;
+            color: var(--white);
+        }
+
+        .partners-section .section-header h2,
+        .partners-section .section-header p {
+            color: var(--white);
+        }
+
+        .partners-section .section-label {
+            background-color: rgba(255,255,255,0.15);
+            color: var(--white);
+        }
+
+        .partners-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+        }
+
+        .partner-logo {
+            background-color: rgba(255,255,255,0.08);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: var(--radius);
+            padding: 36px 24px;
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .partner-logo:hover {
+            background-color: rgba(255,255,255,0.14);
+            transform: translateY(-6px);
+        }
+
+        .partner-logo i {
+            font-size: 2.4rem;
+            color: rgba(255,255,255,0.85);
+            margin-bottom: 14px;
+        }
+
+        .partner-logo h4 {
+            color: var(--white);
+            font-size: 0.95rem;
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .partner-logo span {
+            color: rgba(255,255,255,0.65);
+            font-size: 0.78rem;
+        }
+
+        /* ===== HOW TO PARTNER ===== */
+        .how-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+        }
+
+        .how-card {
+            position: relative;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .how-number {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--purple), var(--purple-light));
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            font-weight: 800;
+            font-family: 'Playfair Display', serif;
+            margin: 0 auto 22px;
+            box-shadow: var(--shadow-md);
+        }
+
+        .how-card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 12px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+        }
+
+        .how-card p {
+            font-size: 0.9rem;
+            color: var(--grey);
+            line-height: 1.7;
+        }
+
+        .how-card::after {
+            content: '';
+            position: absolute;
+            top: 50px;
+            right: -15px;
+            width: 30px;
+            height: 2px;
+            background: repeating-linear-gradient(to right, var(--purple-light) 0, var(--purple-light) 4px, transparent 4px, transparent 8px);
+        }
+
+        .how-card:last-child::after {
+            display: none;
+        }
+
+        /* ===== PARTNERSHIP FORM ===== */
+        .form-section {
+            background-color: var(--grey-light);
+        }
+
+        .form-wrapper {
+            max-width: 850px;
+            margin: 0 auto;
+            background-color: var(--white);
+            padding: 55px 50px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-lg);
+            border-top: 5px solid var(--purple);
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 22px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group.full {
+            grid-column: span 2;
+        }
+
+        .form-group label {
+            font-size: 0.88rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 8px;
+        }
+
+        .form-group label span {
+            color: var(--purple);
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            padding: 14px 18px;
+            border-radius: var(--radius-sm);
+            border: 1.5px solid rgba(0,0,0,0.1);
+            background-color: var(--off-white);
+            font-family: 'Inter', sans-serif;
+            font-size: 0.95rem;
+            color: var(--text-dark);
+            outline: none;
+            transition: var(--transition);
+            width: 100%;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: var(--purple);
+            background-color: var(--white);
+            box-shadow: 0 0 0 4px rgba(123, 75, 154, 0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 140px;
+        }
+
+        .form-submit {
+            grid-column: span 2;
+            margin-top: 8px;
+        }
+
+        .form-submit button {
+            background-color: var(--purple);
+            color: var(--white);
+            padding: 16px 42px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            border: none;
+            cursor: pointer;
+            transition: var(--transition);
+            font-family: 'Inter', sans-serif;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .form-submit button:hover {
+            background-color: var(--purple-dark);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        /* ===== CTA STRIP ===== */
+        .cta-strip {
+            background: linear-gradient(135deg, rgba(92, 53, 117, 0.92), rgba(123, 75, 154, 0.88)), url('https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=1600&q=80') center/cover no-repeat;
+            padding: 70px 0;
+            text-align: center;
+            color: var(--white);
+        }
+
+        .cta-strip h2 {
+            color: var(--white);
+            font-size: 2.2rem;
+            margin-bottom: 16px;
+        }
+
+        .cta-strip p {
+            color: rgba(255,255,255,0.85);
+            font-size: 1.05rem;
+            margin-bottom: 32px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 14px 32px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: var(--transition);
+        }
+
+        .btn-primary {
+            background-color: var(--white);
+            color: var(--purple-dark);
+        }
+
+        .btn-primary:hover {
+            background-color: #f0e6f5;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--white);
+            border-color: rgba(255,255,255,0.5);
+        }
+
+        .btn-outline:hover {
+            background-color: rgba(255,255,255,0.1);
+            border-color: var(--white);
+            transform: translateY(-2px);
+        }
+
+        /* ===== FOOTER ===== */
+        .footer {
+            background-color: #1A1025;
+            color: rgba(255,255,255,0.75);
+            padding: 70px 0 0;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1.5fr;
+            gap: 40px;
+            padding-bottom: 50px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .footer-brand .logo-text h2 {
+            color: var(--white);
+        }
+
+        .footer-brand .logo-text span {
+            color: rgba(255,255,255,0.5);
+        }
+
+        .footer-brand p {
+            margin-top: 18px;
+            font-size: 0.9rem;
+            line-height: 1.8;
+            max-width: 320px;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 12px;
+            margin-top: 22px;
+        }
+
+        .footer-social a {
+            width: 38px;
+            height: 38px;
+            background-color: rgba(255,255,255,0.08);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255,255,255,0.7);
+            font-size: 0.95rem;
+        }
+
+        .footer-social a:hover {
+            background-color: var(--purple);
+            color: var(--white);
+            transform: translateY(-2px);
+        }
+
+        .footer h4 {
+            color: var(--white);
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            letter-spacing: 0.5px;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .footer-links a {
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.65);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .footer-links a:hover {
+            color: var(--white);
+            padding-left: 4px;
+        }
+
+        .footer-contact {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .footer-contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            font-size: 0.9rem;
+        }
+
+        .footer-contact-item i {
+            color: var(--purple-light);
+            margin-top: 4px;
+            font-size: 0.95rem;
+        }
+
+        .footer-bottom {
+            padding: 24px 0;
+            text-align: center;
+            font-size: 0.85rem;
+            color: rgba(255,255,255,0.45);
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 1024px) {
+            .page-hero h1 { font-size: 2.5rem; }
+            .intro-grid { grid-template-columns: 1fr; gap: 40px; }
+            .types-grid { grid-template-columns: repeat(2, 1fr); }
+            .benefits-grid { grid-template-columns: 1fr; gap: 40px; }
+            .partners-grid { grid-template-columns: repeat(2, 1fr); }
+            .how-grid { grid-template-columns: repeat(2, 1fr); }
+            .how-card::after { display: none; }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+        }
+
+        @media (max-width: 768px) {
+            .top-bar .container { justify-content: center; text-align: center; }
+            .top-bar-left { justify-content: center; }
+            .top-bar-right { justify-content: center; }
+            
+            .nav-menu {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background-color: var(--white);
+                flex-direction: column;
+                padding: 16px 24px 24px;
+                box-shadow: var(--shadow-md);
+                gap: 4px;
+            }
+            .nav-menu.open { display: flex; }
+            .nav-menu a { width: 100%; padding: 12px 16px; }
+            .nav-cta { text-align: center; justify-content: center; margin-left: 0 !important; margin-top: 8px; }
+            .hamburger { display: block; }
+            .navbar .container { position: relative; }
+
+            .page-hero { padding: 70px 0 60px; }
+            .page-hero h1 { font-size: 2rem; }
+            .page-hero p { font-size: 1rem; }
+
+            .section-header h2 { font-size: 1.8rem; }
+            .section-padding { padding: 60px 0; }
+
+            .types-grid { grid-template-columns: 1fr; }
+            .partners-grid { grid-template-columns: 1fr 1fr; }
+            .how-grid { grid-template-columns: 1fr; }
+
+            .form-wrapper { padding: 40px 26px; }
+            .form-grid { grid-template-columns: 1fr; gap: 18px; }
+            .form-group.full { grid-column: span 1; }
+            .form-submit { grid-column: span 1; }
+            .form-submit button { width: 100%; justify-content: center; }
+
+            .footer-grid { grid-template-columns: 1fr; gap: 30px; }
+            .hero-buttons { flex-direction: column; align-items: center; }
+        }
+
+        @media (max-width: 480px) {
+            .page-hero h1 { font-size: 1.7rem; }
+            .btn { width: 100%; justify-content: center; }
+            .logo-text h2 { font-size: 1rem; }
+            .logo-icon { width: 40px; height: 40px; font-size: 1.1rem; }
+            .partners-grid { grid-template-columns: 1fr; }
+        }
+
+        /* ===== ANIMATIONS ===== */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== TOP BAR ===== -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+                <a href="tel:+256700000000"><i class="fas fa-phone"></i> +256 700 000 000</a>
+                <a href="mailto:info@kasubiparents.ac.ug"><i class="fas fa-envelope"></i> info@kasubiparents.ac.ug</a>
+            </div>
+            <div class="top-bar-right">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="{% url 'home' %}" class="logo">
+                <div class="logo-icon">K</div>
+                <div class="logo-text">
+                    <h2>Kasubi Parents School</h2>
+                    <span>Rubaga Division, Kampala</span>
+                </div>
+            </a>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="nav-menu" id="navMenu">
+                <a href="{% url 'home' %}">Home</a>
+                <a href="{% url 'about' %}">About Us</a>
+                <a href="{% url 'academics' %}">Academics</a>
+                <a href="{% url 'gallery' %}">Gallery</a>
+                <a href="{% url 'news' %}">News</a>
+                <a href="{% url 'partnerships' %}" class="active">Partnerships</a>
+                <a href="{% url 'contact' %}">Contact Us</a>
+                <a href="{% url 'apply' %}" class="nav-cta">Apply Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== PAGE HERO ===== -->
+    <header class="page-hero">
+        <div class="container page-hero-content">
+            <div class="breadcrumb">
+                <a href="{% url 'home' %}">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>Partnerships</span>
+            </div>
+            <h1>Partner With Us</h1>
+            <p>
+                Together, we can build a brighter future for our students and our community. 
+                Explore partnership opportunities with Kasubi Parents Secondary School.
+            </p>
+        </div>
+    </header>
+
+    <!-- ===== INTRO ===== -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="intro-grid">
+                <div class="intro-text fade-in">
+                    <span class="section-label">Why Partner With Us</span>
+                    <h2>Stronger Together — Building Brighter Futures</h2>
+                    <p>
+                        At Kasubi Parents Secondary School, we believe that quality education is a 
+                        shared responsibility. We partner with individuals, organizations, 
+                        businesses, and institutions who share our vision of empowering young 
+                        people through education.
+                    </p>
+                    <p>
+                        Whether you are an NGO looking to support education, a business 
+                        interested in community development, an individual wanting to sponsor a 
+                        student, or an institution seeking collaboration — there are many ways to 
+                        partner with us.
+                    </p>
+                    <p>
+                        Every partnership, big or small, makes a real difference in the lives of 
+                        our students and the future of our community.
+                    </p>
+                </div>
+                <div class="intro-image fade-in">
+                    <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=800&q=80" alt="Partnership meeting">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PARTNERSHIP TYPES ===== -->
+    <section class="section-padding types-section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">Partnership Opportunities</span>
+                <h2>Ways You Can Partner With Us</h2>
+                <p>Choose the partnership model that aligns with your mission, values, and goals.</p>
+            </div>
+            <div class="types-grid">
+                <div class="type-card fade-in">
+                    <div class="type-image">
+                        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&q=80" alt="Student Sponsorship">
+                        <div class="type-icon-badge"><i class="fas fa-user-graduate"></i></div>
+                    </div>
+                    <div class="type-content">
+                        <h3>Student Sponsorship</h3>
+                        <p>Sponsor one or more students who need financial support to access quality secondary education.</p>
+                        <ul class="type-list">
+                            <li><i class="fas fa-circle"></i> Full or partial scholarship</li>
+                            <li><i class="fas fa-circle"></i> Tuition, boarding & scholastic materials</li>
+                            <li><i class="fas fa-circle"></i> Progress reports to sponsors</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="type-card fade-in">
+                    <div class="type-image">
+                        <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=600&q=80" alt="Infrastructure Support">
+                        <div class="type-icon-badge"><i class="fas fa-building"></i></div>
+                    </div>
+                    <div class="type-content">
+                        <h3>Infrastructure Support</h3>
+                        <p>Contribute to the development and improvement of our school facilities and learning environment.</p>
+                        <ul class="type-list">
+                            <li><i class="fas fa-circle"></i> Classroom & lab construction</li>
+                            <li><i class="fas fa-circle"></i> Library & ICT development</li>
+                            <li><i class="fas fa-circle"></i> Dormitory & dining improvements</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="type-card fade-in">
+                    <div class="type-image">
+                        <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&q=80" alt="Academic Collaboration">
+                        <div class="type-icon-badge"><i class="fas fa-handshake"></i></div>
+                    </div>
+                    <div class="type-content">
+                        <h3>Academic Collaboration</h3>
+                        <p>Collaborate with us on academic programs, teacher training, and curriculum development.</p>
+                        <ul class="type-list">
+                            <li><i class="fas fa-circle"></i> Teacher development programs</li>
+                            <li><i class="fas fa-circle"></i> Curriculum support & resources</li>
+                            <li><i class="fas fa-circle"></i> Research & innovation projects</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="type-card fade-in">
+                    <div class="type-image">
+                        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&q=80" alt="Scholastic Materials">
+                        <div class="type-icon-badge"><i class="fas fa-book"></i></div>
+                    </div>
+                    <div class="type-content">
+                        <h3>Materials & Resources</h3>
+                        <p>Donate textbooks, laboratory equipment, computers, and other essential learning materials.</p>
+                        <ul class="type-list">
+                            <li><i class="fas fa-circle"></i> Textbooks & reference materials</li>
+                            <li><i class="fas fa-circle"></i> Science lab equipment</li>
+                            <li><i class="fas fa-circle"></i> Computers & ICT supplies</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="type-card fade-in">
+                    <div class="type-image">
+                        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=600&q=80" alt="Mentorship Programs">
+                        <div class="type-icon-badge"><i class="fas fa-users"></i></div>
+                    </div>
+                    <div class="type-content">
+                        <h3>Mentorship & Skills</h3>
+                        <p>Share your expertise through career talks, mentorship programs, and skills training for students.</p>
+                        <ul class="type-list">
+                            <li><i class="fas fa-circle"></i> Career guidance sessions</li>
+                            <li><i class="fas fa-circle"></i> Life skills workshops</li>
+                            <li><i class="fas fa-circle"></i> Entrepreneurship training</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="type-card fade-in">
+                    <div class="type-image">
+                        <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=600&q=80" alt="Community Development">
+                        <div class="type-icon-badge"><i class="fas fa-globe"></i></div>
+                    </div>
+                    <div class="type-content">
+                        <h3>Community Development</h3>
+                        <p>Partner with us on community outreach programs that extend education beyond our school walls.</p>
+                        <ul class="type-list">
+                            <li><i class="fas fa-circle"></i> Community literacy programs</li>
+                            <li><i class="fas fa-circle"></i> Health & wellness initiatives</li>
+                            <li><i class="fas fa-circle"></i> Environmental projects</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== BENEFITS ===== -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="benefits-grid">
+                <div class="benefits-image fade-in">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80" alt="Partnership benefits">
+                </div>
+                <div class="benefits-text fade-in">
+                    <span class="section-label">Mutual Benefits</span>
+                    <h2>What Our Partners Gain</h2>
+                    <p>
+                        We value our partners and are committed to building relationships that are 
+                        meaningful, transparent, and mutually beneficial.
+                    </p>
+                    <div class="benefit-items">
+                        <div class="benefit-item">
+                            <i class="fas fa-award"></i>
+                            <div>
+                                <h4>Recognition</h4>
+                                <p>Public recognition of your contribution on our website, school events, and publications.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-chart-line"></i>
+                            <div>
+                                <h4>Impact Reports</h4>
+                                <p>Regular updates and reports showing the direct impact of your partnership on students.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-handshake"></i>
+                            <div>
+                                <h4>Community Goodwill</h4>
+                                <p>Strengthen your brand's reputation as a responsible and community-focused organization.</p>
+                            </div>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-network-wired"></i>
+                            <div>
+                                <h4>Networking</h4>
+                                <p>Connect with other partners, educators, and community leaders at our events and forums.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CURRENT PARTNERS ===== -->
+    <section class="section-padding partners-section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">Our Partners</span>
+                <h2>Organizations We Work With</h2>
+                <p>We are grateful to the organizations and individuals who support our mission.</p>
+            </div>
+            <div class="partners-grid">
+                <div class="partner-logo fade-in">
+                    <i class="fas fa-school"></i>
+                    <h4>Ministry of Education</h4>
+                    <span>Government Partner</span>
+                </div>
+                <div class="partner-logo fade-in">
+                    <i class="fas fa-hands-helping"></i>
+                    <h4>Community NGOs</h4>
+                    <span>Development Partners</span>
+                </div>
+                <div class="partner-logo fade-in">
+                    <i class="fas fa-university"></i>
+                    <h4>Higher Institutions</h4>
+                    <span>Academic Partners</span>
+                </div>
+                <div class="partner-logo fade-in">
+                    <i class="fas fa-briefcase"></i>
+                    <h4>Corporate Sponsors</h4>
+                    <span>Business Partners</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== HOW TO PARTNER ===== -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">Getting Started</span>
+                <h2>How to Become a Partner</h2>
+                <p>A simple, transparent process to begin your partnership journey with us.</p>
+            </div>
+            <div class="how-grid">
+                <div class="how-card fade-in">
+                    <div class="how-number">1</div>
+                    <h3>Reach Out</h3>
+                    <p>Contact us through our partnership form or by phone to express your interest.</p>
+                </div>
+                <div class="how-card fade-in">
+                    <div class="how-number">2</div>
+                    <h3>Discussion</h3>
+                    <p>We'll schedule a meeting to discuss your goals and how we can work together.</p>
+                </div>
+                <div class="how-card fade-in">
+                    <div class="how-number">3</div>
+                    <h3>Agreement</h3>
+                    <p>We'll formalize the partnership with a clear, transparent agreement.</p>
+                </div>
+                <div class="how-card fade-in">
+                    <div class="how-number">4</div>
+                    <h3>Launch</h3>
+                    <p>We begin working together, with regular updates and impact reporting.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PARTNERSHIP FORM ===== -->
+    <section class="section-padding form-section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">Get In Touch</span>
+                <h2>Partnership Inquiry Form</h2>
+                <p>Fill out the form below and our partnership team will get back to you shortly.</p>
+            </div>
+            <div class="form-wrapper fade-in">
+                <form onsubmit="event.preventDefault(); alert('Thank you for your partnership inquiry! We will contact you soon. (Demo only)'); this.reset();">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label>Full Name <span>*</span></label>
+                            <input type="text" placeholder="Your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Organization / Company</label>
+                            <input type="text" placeholder="Name of your organization">
+                        </div>
+                        <div class="form-group">
+                            <label>Email Address <span>*</span></label>
+                            <input type="email" placeholder="your.email@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Phone Number <span>*</span></label>
+                            <input type="tel" placeholder="+256 700 000 000" required>
+                        </div>
+                        <div class="form-group full">
+                            <label>Partnership Type <span>*</span></label>
+                            <select required>
+                                <option value="">Select a partnership type</option>
+                                <option>Student Sponsorship</option>
+                                <option>Infrastructure Support</option>
+                                <option>Academic Collaboration</option>
+                                <option>Materials & Resources</option>
+                                <option>Mentorship & Skills</option>
+                                <option>Community Development</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group full">
+                            <label>Message <span>*</span></label>
+                            <textarea placeholder="Tell us about your organization and how you would like to partner with us..." required></textarea>
+                        </div>
+                        <div class="form-submit">
+                            <button type="submit">
+                                <i class="fas fa-paper-plane"></i> Submit Partnership Inquiry
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA STRIP ===== -->
+    <section class="cta-strip">
+        <div class="container fade-in">
+            <h2>Let's Build Something Great Together</h2>
+            <p>Whether you're an individual, business, or organization — your partnership can transform lives. Reach out to us today.</p>
+            <div class="hero-buttons">
+                <a href="{% url 'contact' %}" class="btn btn-primary">
+                    <i class="fas fa-envelope"></i> Contact Our Team
+                </a>
+                <a href="{% url 'about' %}" class="btn btn-outline" style="border-color: rgba(255,255,255,0.5);">
+                    <i class="fas fa-info-circle"></i> Learn More About Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-icon">K</div>
+                        <div class="logo-text">
+                            <h2>Kasubi Parents Secondary School</h2>
+                            <span>Rubaga Division, Kampala</span>
+                        </div>
+                    </div>
+                    <p>
+                        A licensed day and boarding secondary school along Nabulagala Road in the 
+                        Rubaga Division of Kampala — offering O-Level and A-Level education rooted 
+                        in strong academics, character, and community.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <div class="footer-links">
+                        <a href="{% url 'about' %}"><i class="fas fa-chevron-right"></i> About Us</a>
+                        <a href="{% url 'academics' %}"><i class="fas fa-chevron-right"></i> Academics</a>
+                        <a href="{% url 'apply' %}"><i class="fas fa-chevron-right"></i> Admissions</a>
+                        <a href="{% url 'gallery' %}"><i class="fas fa-chevron-right"></i> Gallery</a>
+                        <a href="{% url 'news' %}"><i class="fas fa-chevron-right"></i> News</a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Our School</h4>
+                    <div class="footer-links">
+                        <a href="{% url 'partnerships' %}"><i class="fas fa-chevron-right"></i> Partnerships</a>
+                        <a href="{% url 'contact' %}"><i class="fas fa-chevron-right"></i> Contact Us</a>
+                        <a href="#"><i class="fas fa-chevron-right"></i> Day & Boarding</a>
+                        <a href="#"><i class="fas fa-chevron-right"></i> O & A-Level</a>
+                        <a href="#"><i class="fas fa-chevron-right"></i> Co-Curricular</a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Contact Info</h4>
+                    <div class="footer-contact">
+                        <div class="footer-contact-item">
+                            <i class="fas fa-location-dot"></i>
+                            <span>Nabulagala Road, Rubaga Division<br>Kampala, Uganda</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+256 700 000 000</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@kasubiparents.ac.ug</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Mon – Fri: 8:00 AM – 5:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Kasubi Parents Secondary School. All Rights Reserved. | Licensed by the Ministry of Education and Sports.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== JAVASCRIPT ===== -->
+    <script>
+        // Mobile Menu Toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('open');
+            const icon = hamburger.querySelector('i');
+            if (navMenu.classList.contains('open')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        navMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('open');
+                const icon = hamburger.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            });
+        });
+
+        // Scroll Fade-In Animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+
+</body>
+</html>

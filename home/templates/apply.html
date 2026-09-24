@@ -1,0 +1,1854 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Apply for admission to Kasubi Parents Secondary School - Join our day and boarding O-Level and A-Level programs in Rubaga Division, Kampala, Uganda. Simple application process, clear requirements, and a warm welcome.">
+    <title>Apply Now | Admissions | Kasubi Parents Secondary School</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        /* ===== CSS VARIABLES ===== */
+        :root {
+            --purple: #7B4B9A;
+            --purple-dark: #5C3575;
+            --purple-light: #9B6BB5;
+            --purple-pale: #F3EDF7;
+            --grey: #6B7280;
+            --grey-light: #F5F6F8;
+            --grey-dark: #374151;
+            --white: #FFFFFF;
+            --off-white: #FAFAFA;
+            --text-dark: #1F2937;
+            --text-body: #4B5563;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+            --shadow-md: 0 4px 16px rgba(0,0,0,0.10);
+            --shadow-lg: 0 10px 40px rgba(0,0,0,0.12);
+            --radius: 12px;
+            --radius-sm: 8px;
+            --transition: all 0.3s ease;
+        }
+
+        /* ===== RESET & BASE ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--text-body);
+            background-color: var(--white);
+            line-height: 1.7;
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            color: var(--text-dark);
+            line-height: 1.25;
+            font-weight: 700;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .section-padding {
+            padding: 90px 0;
+        }
+
+        .section-padding-sm {
+            padding: 60px 0;
+        }
+
+        /* ===== TOP BAR ===== */
+        .top-bar {
+            background-color: var(--purple-dark);
+            color: var(--white);
+            padding: 10px 0;
+            font-size: 0.85rem;
+        }
+
+        .top-bar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .top-bar a {
+            color: rgba(255,255,255,0.9);
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .top-bar a:hover {
+            color: var(--white);
+        }
+
+        .top-bar-left {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .top-bar-right {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+        }
+
+        .top-bar-right a {
+            font-size: 0.95rem;
+        }
+
+        .top-bar-right a:hover {
+            transform: translateY(-1px);
+        }
+
+        /* ===== NAVIGATION ===== */
+        .navbar {
+            background-color: var(--white);
+            box-shadow: var(--shadow-sm);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 24px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, var(--purple), var(--purple-light));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.4rem;
+            font-weight: 800;
+            font-family: 'Playfair Display', serif;
+            flex-shrink: 0;
+        }
+
+        .logo-text h2 {
+            font-size: 1.15rem;
+            font-weight: 800;
+            color: var(--purple-dark);
+            line-height: 1.2;
+        }
+
+        .logo-text span {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 500;
+            color: var(--grey);
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .nav-menu a {
+            padding: 8px 14px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--grey-dark);
+            border-radius: var(--radius-sm);
+            position: relative;
+        }
+
+        .nav-menu a:hover,
+        .nav-menu a.active {
+            color: var(--purple);
+            background-color: var(--purple-pale);
+        }
+
+        .nav-cta {
+            background-color: var(--purple) !important;
+            color: var(--white) !important;
+            padding: 10px 22px !important;
+            border-radius: 50px !important;
+            font-weight: 600 !important;
+            margin-left: 8px;
+        }
+
+        .nav-cta:hover {
+            background-color: var(--purple-dark) !important;
+            transform: translateY(-1px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .hamburger {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--purple-dark);
+            cursor: pointer;
+            padding: 8px;
+        }
+
+        /* ===== PAGE HERO ===== */
+        .page-hero {
+            background: linear-gradient(135deg, rgba(92, 53, 117, 0.93), rgba(123, 75, 154, 0.88)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1600&q=80') center/cover no-repeat;
+            color: var(--white);
+            padding: 100px 0 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .page-hero::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 60px;
+            background: linear-gradient(to top, var(--white), transparent);
+            pointer-events: none;
+        }
+
+        .page-hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .page-hero h1 {
+            font-size: 3rem;
+            color: var(--white);
+            margin-bottom: 16px;
+            letter-spacing: -0.5px;
+        }
+
+        .page-hero p {
+            font-size: 1.1rem;
+            color: rgba(255,255,255,0.9);
+            max-width: 650px;
+            margin: 0 auto 36px;
+            line-height: 1.8;
+        }
+
+        .breadcrumb {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+            font-size: 0.85rem;
+            color: rgba(255,255,255,0.7);
+        }
+
+        .breadcrumb a {
+            color: rgba(255,255,255,0.8);
+        }
+
+        .breadcrumb a:hover {
+            color: var(--white);
+        }
+
+        .breadcrumb i {
+            font-size: 0.6rem;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background-color: rgba(255,255,255,0.15);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.25);
+            padding: 8px 22px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            margin-bottom: 24px;
+        }
+
+        /* ===== SECTION HEADERS ===== */
+        .section-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 56px;
+        }
+
+        .section-label {
+            display: inline-block;
+            background-color: var(--purple-pale);
+            color: var(--purple);
+            padding: 6px 18px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+
+        .section-header h2 {
+            font-size: 2.4rem;
+            margin-bottom: 16px;
+            color: var(--text-dark);
+        }
+
+        .section-header p {
+            font-size: 1.05rem;
+            color: var(--grey);
+        }
+
+        /* ===== WELCOME SECTION ===== */
+        .welcome-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .welcome-text h2 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+        }
+
+        .welcome-text p {
+            margin-bottom: 18px;
+            font-size: 1.02rem;
+        }
+
+        .welcome-highlights {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-top: 28px;
+        }
+
+        .welcome-highlight {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        .welcome-highlight i {
+            color: var(--purple);
+            font-size: 1.2rem;
+            margin-top: 3px;
+        }
+
+        .welcome-highlight span {
+            font-weight: 500;
+            color: var(--text-dark);
+            font-size: 0.95rem;
+        }
+
+        .welcome-image {
+            position: relative;
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .welcome-image img {
+            width: 100%;
+            height: 460px;
+            object-fit: cover;
+        }
+
+        .welcome-image::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: 20px;
+            right: -20px;
+            bottom: 20px;
+            border: 3px solid var(--purple-light);
+            border-radius: var(--radius);
+            z-index: -1;
+        }
+
+        /* ===== ADMISSION PROCESS ===== */
+        .process-section {
+            background-color: var(--grey-light);
+        }
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+        }
+
+        .process-card {
+            position: relative;
+            background-color: var(--white);
+            padding: 40px 28px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid rgba(0,0,0,0.04);
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .process-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-lg);
+            border-color: rgba(123, 75, 154, 0.2);
+        }
+
+        .process-number {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--purple), var(--purple-light));
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            font-weight: 800;
+            font-family: 'Playfair Display', serif;
+            margin: 0 auto 22px;
+            box-shadow: var(--shadow-md);
+        }
+
+        .process-card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 12px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+        }
+
+        .process-card p {
+            font-size: 0.9rem;
+            color: var(--grey);
+            line-height: 1.7;
+        }
+
+        .process-card::after {
+            content: '';
+            position: absolute;
+            top: 50px;
+            right: -15px;
+            width: 30px;
+            height: 2px;
+            background: repeating-linear-gradient(to right, var(--purple-light) 0, var(--purple-light) 4px, transparent 4px, transparent 8px);
+        }
+
+        .process-card:last-child::after {
+            display: none;
+        }
+
+        /* ===== REQUIREMENTS ===== */
+        .requirements-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+        }
+
+        .requirements-box {
+            background-color: var(--white);
+            padding: 45px 40px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid rgba(0,0,0,0.04);
+            border-top: 5px solid var(--purple);
+            transition: var(--transition);
+        }
+
+        .requirements-box:hover {
+            box-shadow: var(--shadow-md);
+        }
+
+        .requirements-box h3 {
+            font-size: 1.4rem;
+            margin-bottom: 8px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .requirements-box h3 i {
+            color: var(--purple);
+            font-size: 1.2rem;
+        }
+
+        .requirements-box > p {
+            font-size: 0.95rem;
+            color: var(--grey);
+            margin-bottom: 22px;
+        }
+
+        .requirements-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .requirements-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            font-size: 0.95rem;
+            color: var(--text-body);
+            line-height: 1.6;
+        }
+
+        .requirements-list li i {
+            color: var(--purple);
+            font-size: 0.9rem;
+            margin-top: 5px;
+            flex-shrink: 0;
+        }
+
+        .requirements-list li strong {
+            color: var(--text-dark);
+            font-weight: 600;
+        }
+
+        /* ===== FEE STRUCTURE ===== */
+        .fees-section {
+            background: linear-gradient(135deg, rgba(92, 53, 117, 0.95), rgba(123, 75, 154, 0.9)), url('https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1600&q=80') center/cover no-repeat fixed;
+            color: var(--white);
+        }
+
+        .fees-section .section-header h2,
+        .fees-section .section-header p {
+            color: var(--white);
+        }
+
+        .fees-section .section-label {
+            background-color: rgba(255,255,255,0.15);
+            color: var(--white);
+        }
+
+        .fees-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+        }
+
+        .fee-card {
+            background-color: rgba(255,255,255,0.08);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: var(--radius);
+            padding: 42px 32px;
+            transition: var(--transition);
+        }
+
+        .fee-card:hover {
+            background-color: rgba(255,255,255,0.12);
+            transform: translateY(-6px);
+        }
+
+        .fee-card h3 {
+            color: var(--white);
+            font-size: 1.4rem;
+            margin-bottom: 8px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+        }
+
+        .fee-card > p {
+            color: rgba(255,255,255,0.75);
+            font-size: 0.88rem;
+            margin-bottom: 22px;
+        }
+
+        .fee-list {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .fee-list li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid rgba(255,255,255,0.12);
+            font-size: 0.92rem;
+            color: rgba(255,255,255,0.9);
+        }
+
+        .fee-list li:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .fee-list li strong {
+            color: var(--white);
+            font-weight: 700;
+        }
+
+        .fees-note {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.92rem;
+            color: rgba(255,255,255,0.8);
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .fees-note i {
+            color: var(--purple-light);
+            margin-right: 6px;
+        }
+
+        /* ===== APPLICATION FORM ===== */
+        .form-section {
+            background-color: var(--grey-light);
+        }
+
+        .form-wrapper {
+            max-width: 950px;
+            margin: 0 auto;
+            background-color: var(--white);
+            padding: 55px 50px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-lg);
+            border-top: 5px solid var(--purple);
+        }
+
+        .form-section-title {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 24px;
+            margin-top: 10px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid var(--purple-pale);
+        }
+
+        .form-section-title:first-of-type {
+            margin-top: 0;
+        }
+
+        .form-section-title i {
+            color: var(--purple);
+            font-size: 1.1rem;
+        }
+
+        .form-section-title h3 {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text-dark);
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group.full {
+            grid-column: span 2;
+        }
+
+        .form-group label {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 8px;
+        }
+
+        .form-group label span {
+            color: var(--purple);
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            padding: 14px 18px;
+            border-radius: var(--radius-sm);
+            border: 1.5px solid rgba(0,0,0,0.1);
+            background-color: var(--off-white);
+            font-family: 'Inter', sans-serif;
+            font-size: 0.95rem;
+            color: var(--text-dark);
+            outline: none;
+            transition: var(--transition);
+            width: 100%;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: var(--purple);
+            background-color: var(--white);
+            box-shadow: 0 0 0 4px rgba(123, 75, 154, 0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 110px;
+        }
+
+        .checkbox-group {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            padding-top: 6px;
+        }
+
+        .checkbox-option {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            cursor: pointer;
+            font-size: 0.92rem;
+            color: var(--text-body);
+            line-height: 1.6;
+        }
+
+        .checkbox-option input[type="checkbox"] {
+            width: auto;
+            margin-top: 5px;
+            accent-color: var(--purple);
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+
+        .form-submit {
+            grid-column: span 2;
+            margin-top: 16px;
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .form-submit button {
+            background-color: var(--purple);
+            color: var(--white);
+            padding: 16px 42px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            border: none;
+            cursor: pointer;
+            transition: var(--transition);
+            font-family: 'Inter', sans-serif;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .form-submit button:hover {
+            background-color: var(--purple-dark);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .form-submit button.reset-btn {
+            background-color: transparent;
+            color: var(--grey-dark);
+            border: 1.5px solid rgba(0,0,0,0.15);
+        }
+
+        .form-submit button.reset-btn:hover {
+            background-color: var(--grey-light);
+            color: var(--text-dark);
+            box-shadow: none;
+        }
+
+        /* ===== DOCUMENTS CHECKLIST ===== */
+        .docs-section {
+            background-color: var(--white);
+        }
+
+        .docs-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+        }
+
+        .doc-card {
+            background-color: var(--grey-light);
+            padding: 32px 24px;
+            border-radius: var(--radius);
+            text-align: center;
+            transition: var(--transition);
+            border: 1px solid rgba(0,0,0,0.04);
+        }
+
+        .doc-card:hover {
+            background-color: var(--purple-pale);
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .doc-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--purple-pale), #E8D5F0);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 18px;
+            font-size: 1.4rem;
+            color: var(--purple);
+        }
+
+        .doc-card:hover .doc-icon {
+            background: linear-gradient(135deg, var(--purple), var(--purple-light));
+            color: var(--white);
+        }
+
+        .doc-card h4 {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: var(--text-dark);
+        }
+
+        .doc-card p {
+            font-size: 0.85rem;
+            color: var(--grey);
+            line-height: 1.6;
+        }
+
+        /* ===== FAQ ===== */
+        .faq-section {
+            background-color: var(--grey-light);
+        }
+
+        .faq-list {
+            max-width: 850px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .faq-item {
+            background-color: var(--white);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid rgba(0,0,0,0.04);
+            overflow: hidden;
+            transition: var(--transition);
+        }
+
+        .faq-item:hover {
+            box-shadow: var(--shadow-md);
+        }
+
+        .faq-question {
+            width: 100%;
+            background: none;
+            border: none;
+            padding: 22px 28px;
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+            cursor: pointer;
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            transition: var(--transition);
+        }
+
+        .faq-question:hover {
+            color: var(--purple);
+        }
+
+        .faq-question i {
+            color: var(--purple);
+            font-size: 0.9rem;
+            transition: transform 0.3s ease;
+            flex-shrink: 0;
+        }
+
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.3s ease;
+            padding: 0 28px;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 400px;
+            padding: 0 28px 24px;
+        }
+
+        .faq-answer p {
+            font-size: 0.93rem;
+            color: var(--grey);
+            line-height: 1.8;
+        }
+
+        /* ===== CTA STRIP ===== */
+        .cta-strip {
+            background: linear-gradient(135deg, rgba(92, 53, 117, 0.92), rgba(123, 75, 154, 0.88)), url('https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=1600&q=80') center/cover no-repeat;
+            padding: 70px 0;
+            text-align: center;
+            color: var(--white);
+        }
+
+        .cta-strip h2 {
+            color: var(--white);
+            font-size: 2.2rem;
+            margin-bottom: 16px;
+        }
+
+        .cta-strip p {
+            color: rgba(255,255,255,0.85);
+            font-size: 1.05rem;
+            margin-bottom: 32px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 14px 32px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: var(--transition);
+        }
+
+        .btn-primary {
+            background-color: var(--white);
+            color: var(--purple-dark);
+        }
+
+        .btn-primary:hover {
+            background-color: #f0e6f5;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--white);
+            border-color: rgba(255,255,255,0.5);
+        }
+
+        .btn-outline:hover {
+            background-color: rgba(255,255,255,0.1);
+            border-color: var(--white);
+            transform: translateY(-2px);
+        }
+
+        /* ===== FOOTER ===== */
+        .footer {
+            background-color: #1A1025;
+            color: rgba(255,255,255,0.75);
+            padding: 70px 0 0;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1.5fr;
+            gap: 40px;
+            padding-bottom: 50px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .footer-brand .logo-text h2 {
+            color: var(--white);
+        }
+
+        .footer-brand .logo-text span {
+            color: rgba(255,255,255,0.5);
+        }
+
+        .footer-brand p {
+            margin-top: 18px;
+            font-size: 0.9rem;
+            line-height: 1.8;
+            max-width: 320px;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 12px;
+            margin-top: 22px;
+        }
+
+        .footer-social a {
+            width: 38px;
+            height: 38px;
+            background-color: rgba(255,255,255,0.08);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255,255,255,0.7);
+            font-size: 0.95rem;
+        }
+
+        .footer-social a:hover {
+            background-color: var(--purple);
+            color: var(--white);
+            transform: translateY(-2px);
+        }
+
+        .footer h4 {
+            color: var(--white);
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            letter-spacing: 0.5px;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .footer-links a {
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.65);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .footer-links a:hover {
+            color: var(--white);
+            padding-left: 4px;
+        }
+
+        .footer-contact {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .footer-contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            font-size: 0.9rem;
+        }
+
+        .footer-contact-item i {
+            color: var(--purple-light);
+            margin-top: 4px;
+            font-size: 0.95rem;
+        }
+
+        .footer-bottom {
+            padding: 24px 0;
+            text-align: center;
+            font-size: 0.85rem;
+            color: rgba(255,255,255,0.45);
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 1024px) {
+            .page-hero h1 { font-size: 2.5rem; }
+            .welcome-grid { grid-template-columns: 1fr; gap: 40px; }
+            .process-grid { grid-template-columns: repeat(2, 1fr); }
+            .process-card::after { display: none; }
+            .requirements-grid { grid-template-columns: 1fr; }
+            .fees-grid { grid-template-columns: 1fr; }
+            .docs-grid { grid-template-columns: repeat(2, 1fr); }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+        }
+
+        @media (max-width: 768px) {
+            .top-bar .container { justify-content: center; text-align: center; }
+            .top-bar-left { justify-content: center; }
+            .top-bar-right { justify-content: center; }
+            
+            .nav-menu {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background-color: var(--white);
+                flex-direction: column;
+                padding: 16px 24px 24px;
+                box-shadow: var(--shadow-md);
+                gap: 4px;
+            }
+            .nav-menu.open { display: flex; }
+            .nav-menu a { width: 100%; padding: 12px 16px; }
+            .nav-cta { text-align: center; justify-content: center; margin-left: 0 !important; margin-top: 8px; }
+            .hamburger { display: block; }
+            .navbar .container { position: relative; }
+
+            .page-hero { padding: 70px 0 60px; }
+            .page-hero h1 { font-size: 2rem; }
+            .page-hero p { font-size: 1rem; }
+
+            .section-header h2 { font-size: 1.8rem; }
+            .section-padding { padding: 60px 0; }
+
+            .welcome-highlights { grid-template-columns: 1fr; }
+            .process-grid { grid-template-columns: 1fr; }
+            .form-wrapper { padding: 40px 26px; }
+            .form-grid { grid-template-columns: 1fr; gap: 18px; }
+            .form-group.full { grid-column: span 1; }
+            .form-submit { grid-column: span 1; flex-direction: column; }
+            .form-submit button { width: 100%; justify-content: center; }
+            .docs-grid { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr; gap: 30px; }
+            .hero-buttons { flex-direction: column; align-items: center; }
+        }
+
+        @media (max-width: 480px) {
+            .page-hero h1 { font-size: 1.7rem; }
+            .btn { width: 100%; justify-content: center; }
+            .logo-text h2 { font-size: 1rem; }
+            .logo-icon { width: 40px; height: 40px; font-size: 1.1rem; }
+            .faq-question { padding: 18px 20px; font-size: 0.93rem; }
+            .faq-answer { padding: 0 20px; }
+            .faq-item.active .faq-answer { padding: 0 20px 20px; }
+            .requirements-box { padding: 34px 26px; }
+            .fee-card { padding: 32px 24px; }
+        }
+
+        /* ===== ANIMATIONS ===== */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== TOP BAR ===== -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+                <a href="tel:+256700000000"><i class="fas fa-phone"></i> +256 700 000 000</a>
+                <a href="mailto:info@kasubiparents.ac.ug"><i class="fas fa-envelope"></i> info@kasubiparents.ac.ug</a>
+            </div>
+            <div class="top-bar-right">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="{% url 'home' %}" class="logo">
+                <div class="logo-icon">K</div>
+                <div class="logo-text">
+                    <h2>Kasubi Parents School</h2>
+                    <span>Rubaga Division, Kampala</span>
+                </div>
+            </a>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="nav-menu" id="navMenu">
+                <a href="{% url 'home' %}">Home</a>
+                <a href="{% url 'about' %}">About Us</a>
+                <a href="{% url 'academics' %}">Academics</a>
+                <a href="{% url 'gallery' %}">Gallery</a>
+                <a href="{% url 'news' %}">News</a>
+                <a href="{% url 'partnerships' %}">Partnerships</a>
+                <a href="{% url 'contact' %}">Contact Us</a>
+                <a href="{% url 'apply' %}" class="nav-cta active">Apply Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== PAGE HERO ===== -->
+    <header class="page-hero">
+        <div class="container page-hero-content">
+            <div class="breadcrumb">
+                <a href="{% url 'home' %}">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>Apply Now</span>
+            </div>
+            <div class="hero-badge">
+                <i class="fas fa-graduation-cap"></i> Admissions Open — S1 to S6
+            </div>
+            <h1>Apply for Admission</h1>
+            <p>
+                Join Kasubi Parents Secondary School — a place where every child begins to 
+                shine. We welcome applications for both O-Level and A-Level, day and boarding.
+            </p>
+        </div>
+    </header>
+
+    <!-- ===== WELCOME ===== -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="welcome-grid">
+                <div class="welcome-text fade-in">
+                    <span class="section-label">Welcome, Future Kasubi Parents</span>
+                    <h2>We're Excited to Welcome You</h2>
+                    <p>
+                        Choosing the right school for your child is one of the most important 
+                        decisions you will make. At Kasubi Parents Secondary School, we are 
+                        committed to providing an environment where your child can grow 
+                        academically, socially, and morally.
+                    </p>
+                    <p>
+                        Our simple, transparent admissions process is designed to help you and 
+                        your child make a smooth transition into our school community. Whether 
+                        you're joining us for Senior One or transferring from another school, 
+                        we are here to support you every step of the way.
+                    </p>
+                    <div class="welcome-highlights">
+                        <div class="welcome-highlight">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Simple Application Process</span>
+                        </div>
+                        <div class="welcome-highlight">
+                            <i class="fas fa-check-circle"></i>
+                            <span>O-Level & A-Level Available</span>
+                        </div>
+                        <div class="welcome-highlight">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Day & Boarding Options</span>
+                        </div>
+                        <div class="welcome-highlight">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Safe & Caring Environment</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="welcome-image fade-in">
+                    <img src="https://res.cloudinary.com/incarr/image/upload/v1790172397/aa_vcqlwo.png" alt="Students at Kasubi Parents Secondary School">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ADMISSION PROCESS ===== -->
+    <section class="section-padding process-section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">How It Works</span>
+                <h2>Our Admission Process</h2>
+                <p>Four simple steps to join the Kasubi Parents family.</p>
+            </div>
+            <div class="process-grid">
+                <div class="process-card fade-in">
+                    <div class="process-number">1</div>
+                    <h3>Submit Application</h3>
+                    <p>Fill out the online application form below, or visit our school office to pick up a physical form.</p>
+                </div>
+                <div class="process-card fade-in">
+                    <div class="process-number">2</div>
+                    <h3>Submit Documents</h3>
+                    <p>Provide the required documents — previous school reports, PLE results (for S1), and a birth certificate.</p>
+                </div>
+                <div class="process-card fade-in">
+                    <div class="process-number">3</div>
+                    <h3>Interview & Assessment</h3>
+                    <p>Attend a short interview and academic assessment, and receive a school tour if you are visiting.</p>
+                </div>
+                <div class="process-card fade-in">
+                    <div class="process-number">4</div>
+                    <h3>Offer & Enrollment</h3>
+                    <p>Receive an admission offer, complete payment, and officially enroll your child at Kasubi Parents.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== REQUIREMENTS ===== -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">What You'll Need</span>
+                <h2>Admission Requirements</h2>
+                <p>Please prepare the following documents before applying.</p>
+            </div>
+            <div class="requirements-grid">
+                <div class="requirements-box fade-in">
+                    <h3><i class="fas fa-user-plus"></i> For Senior One (S1)</h3>
+                    <p>New students joining our O-Level program.</p>
+                    <ul class="requirements-list">
+                        <li><i class="fas fa-circle"></i> <strong>PLE Results Slip</strong> — original and copy</li>
+                        <li><i class="fas fa-circle"></i> <strong>Primary School Report Cards</strong> — from P5 to P7</li>
+                        <li><i class="fas fa-circle"></i> <strong>Birth Certificate</strong> or copy</li>
+                        <li><i class="fas fa-circle"></i> <strong>Passport Photos</strong> — 2 recent copies</li>
+                        <li><i class="fas fa-circle"></i> <strong>Recommendation Letter</strong> from previous school</li>
+                        <li><i class="fas fa-circle"></i> <strong>Completed Application Form</strong></li>
+                    </ul>
+                </div>
+                <div class="requirements-box fade-in">
+                    <h3><i class="fas fa-exchange-alt"></i> For Transfer Students</h3>
+                    <p>Students joining S2 – S6 from another school.</p>
+                    <ul class="requirements-list">
+                        <li><i class="fas fa-circle"></i> <strong>Transfer Letter</strong> from previous school</li>
+                        <li><i class="fas fa-circle"></i> <strong>Recent Report Card</strong> — most recent term</li>
+                        <li><i class="fas fa-circle"></i> <strong>Academic Transcript</strong> (for A-Level transfers)</li>
+                        <li><i class="fas fa-circle"></i> <strong>Birth Certificate</strong> or copy</li>
+                        <li><i class="fas fa-circle"></i> <strong>Passport Photos</strong> — 2 recent copies</li>
+                        <li><i class="fas fa-circle"></i> <strong>Completed Application Form</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FEE STRUCTURE ===== -->
+    <section class="section-padding fees-section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">Fees Overview</span>
+                <h2>School Fees Structure</h2>
+                <p>An overview of our termly fees. For the exact, up-to-date fee structure, please contact our office.</p>
+            </div>
+            <div class="fees-grid">
+                <div class="fee-card fade-in">
+                    <h3>Day Section</h3>
+                    <p>For students living nearby</p>
+                    <ul class="fee-list">
+                        <li><span>Day Scholars (S1 – S4)</span> <strong>Contact Us</strong></li>
+                        <li><span>Day Scholars (S5 – S6)</span> <strong>Contact Us</strong></li>
+                        <li><span>Lunch Program</span> <strong>Optional</strong></li>
+                        <li><span>Development Fee</span> <strong>Per Term</strong></li>
+                    </ul>
+                </div>
+                <div class="fee-card fade-in">
+                    <h3>Boarding Section</h3>
+                    <p>Full-time residential students</p>
+                    <ul class="fee-list">
+                        <li><span>Boarding (S1 – S4)</span> <strong>Contact Us</strong></li>
+                        <li><span>Boarding (S5 – S6)</span> <strong>Contact Us</strong></li>
+                        <li><span>Meals & Accommodation</span> <strong>Included</strong></li>
+                        <li><span>Development Fee</span> <strong>Per Term</strong></li>
+                    </ul>
+                </div>
+                <div class="fee-card fade-in">
+                    <h3>Additional Costs</h3>
+                    <p>One-time and optional fees</p>
+                    <ul class="fee-list">
+                        <li><span>Uniform</span> <strong>Once</strong></li>
+                        <li><span>Scholastic Materials</span> <strong>Per Term</strong></li>
+                        <li><span>Medical & Safety</span> <strong>Per Term</strong></li>
+                        <li><span>Co-Curricular Activities</span> <strong>Optional</strong></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="fees-note">
+                <i class="fas fa-info-circle"></i>
+                Fees are reviewed each academic year. For the current, detailed fee structure 
+                and payment options, please call <strong>+256 700 000 000</strong> or email 
+                <strong>info@kasubiparents.ac.ug</strong>.
+            </p>
+        </div>
+    </section>
+
+    <!-- ===== APPLICATION FORM ===== -->
+    <section class="section-padding form-section" id="application-form">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">Online Application</span>
+                <h2>Start Your Application</h2>
+                <p>Fill out this form and our admissions team will contact you within 2 working days.</p>
+            </div>
+
+            <div class="form-wrapper fade-in">
+                <form onsubmit="event.preventDefault(); alert('Thank you! Your application has been submitted successfully. Our admissions team will contact you within 2 working days. (Demo only)'); this.reset();">
+                    
+                    <!-- SECTION 1: Student Information -->
+                    <div class="form-section-title">
+                        <i class="fas fa-user-graduate"></i>
+                        <h3>Student Information</h3>
+                    </div>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label>Student's Full Name <span>*</span></label>
+                            <input type="text" placeholder="First, Middle & Last Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Date of Birth <span>*</span></label>
+                            <input type="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Gender <span>*</span></label>
+                            <select required>
+                                <option value="">Select gender</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Nationality <span>*</span></label>
+                            <input type="text" placeholder="e.g. Ugandan" required>
+                        </div>
+                        <div class="form-group full">
+                            <label>Current / Previous School <span>*</span></label>
+                            <input type="text" placeholder="Name of the last school attended" required>
+                        </div>
+                    </div>
+
+                    <!-- SECTION 2: Admission Details -->
+                    <div class="form-section-title">
+                        <i class="fas fa-school"></i>
+                        <h3>Admission Details</h3>
+                    </div>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label>Class Applying For <span>*</span></label>
+                            <select required>
+                                <option value="">Select class</option>
+                                <option>Senior One (S1)</option>
+                                <option>Senior Two (S2)</option>
+                                <option>Senior Three (S3)</option>
+                                <option>Senior Four (S4)</option>
+                                <option>Senior Five (S5)</option>
+                                <option>Senior Six (S6)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Section <span>*</span></label>
+                            <select required>
+                                <option value="">Select section</option>
+                                <option>Day</option>
+                                <option>Boarding</option>
+                            </select>
+                        </div>
+                        <div class="form-group full">
+                            <label>Preferred A-Level Combination (for S5 & S6 applicants)</label>
+                            <select>
+                                <option value="">Select a combination (optional)</option>
+                                <option>PCB — Physics, Chemistry, Biology</option>
+                                <option>PCM — Physics, Chemistry, Mathematics</option>
+                                <option>BCM — Biology, Chemistry, Mathematics</option>
+                                <option>PEM — Physics, Economics, Mathematics</option>
+                                <option>HEG — History, Economics, Geography</option>
+                                <option>HEL — History, Economics, Literature</option>
+                                <option>HED — History, Economics, Divinity</option>
+                                <option>EDP — Economics, Divinity, Literature</option>
+                                <option>Not applicable</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- SECTION 3: Parent / Guardian Information -->
+                    <div class="form-section-title">
+                        <i class="fas fa-user-friends"></i>
+                        <h3>Parent / Guardian Information</h3>
+                    </div>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label>Parent / Guardian Name <span>*</span></label>
+                            <input type="text" placeholder="Full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Relationship to Student <span>*</span></label>
+                            <select required>
+                                <option value="">Select relationship</option>
+                                <option>Mother</option>
+                                <option>Father</option>
+                                <option>Guardian</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Phone Number <span>*</span></label>
+                            <input type="tel" placeholder="+256 700 000 000" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email Address <span>*</span></label>
+                            <input type="email" placeholder="parent.email@example.com" required>
+                        </div>
+                        <div class="form-group full">
+                            <label>Physical Address / Residence <span>*</span></label>
+                            <input type="text" placeholder="e.g. Rubaga, Kampala" required>
+                        </div>
+                    </div>
+
+                    <!-- SECTION 4: Additional Information -->
+                    <div class="form-section-title">
+                        <i class="fas fa-clipboard-list"></i>
+                        <h3>Additional Information</h3>
+                    </div>
+                    <div class="form-grid">
+                        <div class="form-group full">
+                            <label>Medical Conditions / Special Needs (if any)</label>
+                            <textarea placeholder="Please share any relevant medical information, allergies, or special needs we should be aware of..."></textarea>
+                        </div>
+                        <div class="form-group full">
+                            <label>Additional Notes or Questions</label>
+                            <textarea placeholder="Anything else you'd like us to know?"></textarea>
+                        </div>
+                        <div class="form-group full">
+                            <label>How did you hear about us?</label>
+                            <select>
+                                <option value="">Select an option (optional)</option>
+                                <option>Friend / Family Recommendation</option>
+                                <option>Current Parent</option>
+                                <option>Social Media</option>
+                                <option>Website / Online Search</option>
+                                <option>Community / Church</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group full">
+                            <label>Declaration <span>*</span></label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-option">
+                                    <input type="checkbox" required>
+                                    <span>I confirm that the information provided in this application is accurate and complete. I understand that any false information may lead to the cancellation of admission.</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Submit -->
+                    <div class="form-submit">
+                        <button type="submit">
+                            <i class="fas fa-paper-plane"></i> Submit Application
+                        </button>
+                        <button type="reset" class="reset-btn">
+                            <i class="fas fa-rotate-left"></i> Clear Form
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== DOCUMENTS CHECKLIST ===== -->
+    <section class="section-padding docs-section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">Quick Checklist</span>
+                <h2>Documents to Prepare</h2>
+                <p>A quick reference of the documents you will need before applying.</p>
+            </div>
+            <div class="docs-grid">
+                <div class="doc-card fade-in">
+                    <div class="doc-icon"><i class="fas fa-file-alt"></i></div>
+                    <h4>PLE / Reports</h4>
+                    <p>PLE results slip or recent school report cards.</p>
+                </div>
+                <div class="doc-card fade-in">
+                    <div class="doc-icon"><i class="fas fa-id-card"></i></div>
+                    <h4>Birth Certificate</h4>
+                    <p>Original or a clear photocopy of the student's birth certificate.</p>
+                </div>
+                <div class="doc-card fade-in">
+                    <div class="doc-icon"><i class="fas fa-camera"></i></div>
+                    <h4>Passport Photos</h4>
+                    <p>Two recent passport-sized photos of the student.</p>
+                </div>
+                <div class="doc-card fade-in">
+                    <div class="doc-icon"><i class="fas fa-envelope-open-text"></i></div>
+                    <h4>Transfer Letter</h4>
+                    <p>For transfer students — a letter from the previous school.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="section-padding faq-section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">Admission FAQs</span>
+                <h2>Frequently Asked Questions</h2>
+                <p>Common questions about admissions at Kasubi Parents Secondary School.</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item fade-in">
+                    <button class="faq-question">
+                        <span>When do admissions open and close?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Admissions are open throughout the year, but we encourage applications well before the start of each term. For the main intake (Senior One), we recommend applying immediately after PLE results are released.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <button class="faq-question">
+                        <span>Is there an entrance exam?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, we conduct a short academic assessment for all applicants. This helps us place students appropriately and understand their learning needs. The assessment is friendly and not intended to be stressful.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <button class="faq-question">
+                        <span>Do you offer scholarships or bursaries?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We have a limited number of scholarships and bursaries available for students with exceptional academic ability or genuine financial need. These are awarded through our partners. Please contact the school office for more information.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <button class="faq-question">
+                        <span>Can my child join mid-term?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>In special circumstances, we do consider mid-term admissions — especially for transfer students. Please contact our admissions office to discuss your situation, and we will guide you accordingly.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <button class="faq-question">
+                        <span>What is the deadline for fee payment?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Fees are typically payable at the beginning of each term. We offer flexible payment plans for families who need them. Please speak to our bursar for details on payment schedules.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in">
+                    <button class="faq-question">
+                        <span>How will I know if my child has been admitted?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Once your application is reviewed, we will contact you by phone and email within 2–3 working days to inform you of the outcome and next steps. Successful applicants will receive an admission letter.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA STRIP ===== -->
+    <section class="cta-strip">
+        <div class="container fade-in">
+            <h2>Need Help With Your Application?</h2>
+            <p>Our admissions team is here to guide you through every step. Call us, visit us, or send us a message — we'd love to help.</p>
+            <div class="hero-buttons">
+                <a href="{% url 'contact' %}" class="btn btn-primary">
+                    <i class="fas fa-envelope"></i> Contact Admissions
+                </a>
+                <a href="tel:+256700000000" class="btn btn-outline" style="border-color: rgba(255,255,255,0.5);">
+                    <i class="fas fa-phone"></i> Call Us Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-icon">K</div>
+                        <div class="logo-text">
+                            <h2>Kasubi Parents Secondary School</h2>
+                            <span>Rubaga Division, Kampala</span>
+                        </div>
+                    </div>
+                    <p>
+                        A licensed day and boarding secondary school along Nabulagala Road in the 
+                        Rubaga Division of Kampala — offering O-Level and A-Level education rooted 
+                        in strong academics, character, and community.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <div class="footer-links">
+                        <a href="{% url 'about' %}"><i class="fas fa-chevron-right"></i> About Us</a>
+                        <a href="{% url 'academics' %}"><i class="fas fa-chevron-right"></i> Academics</a>
+                        <a href="{% url 'apply' %}"><i class="fas fa-chevron-right"></i> Admissions</a>
+                        <a href="{% url 'gallery' %}"><i class="fas fa-chevron-right"></i> Gallery</a>
+                        <a href="{% url 'news' %}"><i class="fas fa-chevron-right"></i> News</a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Our School</h4>
+                    <div class="footer-links">
+                        <a href="{% url 'partnerships' %}"><i class="fas fa-chevron-right"></i> Partnerships</a>
+                        <a href="{% url 'contact' %}"><i class="fas fa-chevron-right"></i> Contact Us</a>
+                        <a href="#"><i class="fas fa-chevron-right"></i> Day & Boarding</a>
+                        <a href="#"><i class="fas fa-chevron-right"></i> O & A-Level</a>
+                        <a href="#"><i class="fas fa-chevron-right"></i> Co-Curricular</a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Contact Info</h4>
+                    <div class="footer-contact">
+                        <div class="footer-contact-item">
+                            <i class="fas fa-location-dot"></i>
+                            <span>Nabulagala Road, Rubaga Division<br>Kampala, Uganda</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+256 700 000 000</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@kasubiparents.ac.ug</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Mon – Fri: 8:00 AM – 5:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Kasubi Parents Secondary School. All Rights Reserved. | Licensed by the Ministry of Education and Sports.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== JAVASCRIPT ===== -->
+    <script>
+        // Mobile Menu Toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('open');
+            const icon = hamburger.querySelector('i');
+            if (navMenu.classList.contains('open')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        navMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('open');
+                const icon = hamburger.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            });
+        });
+
+        // Scroll Fade-In Animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const item = button.parentElement;
+                const isActive = item.classList.contains('active');
+
+                document.querySelectorAll('.faq-item').forEach(faq => {
+                    faq.classList.remove('active');
+                });
+
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

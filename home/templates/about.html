@@ -1,0 +1,1398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Kasubi Parents Secondary School - Learn about our history, vision, mission, core values, leadership, and why we are the premier day and boarding secondary school along Nabulagala Road, Rubaga Division, Kampala, Uganda.">
+    <title>About Us | Kasubi Parents Secondary School</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        /* ===== CSS VARIABLES ===== */
+        :root {
+            --purple: #7B4B9A;
+            --purple-dark: #5C3575;
+            --purple-light: #9B6BB5;
+            --purple-pale: #F3EDF7;
+            --grey: #6B7280;
+            --grey-light: #F5F6F8;
+            --grey-dark: #374151;
+            --white: #FFFFFF;
+            --off-white: #FAFAFA;
+            --text-dark: #1F2937;
+            --text-body: #4B5563;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+            --shadow-md: 0 4px 16px rgba(0,0,0,0.10);
+            --shadow-lg: 0 10px 40px rgba(0,0,0,0.12);
+            --radius: 12px;
+            --radius-sm: 8px;
+            --transition: all 0.3s ease;
+        }
+
+        /* ===== RESET & BASE ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--text-body);
+            background-color: var(--white);
+            line-height: 1.7;
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            color: var(--text-dark);
+            line-height: 1.25;
+            font-weight: 700;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .section-padding {
+            padding: 90px 0;
+        }
+
+        .section-padding-sm {
+            padding: 60px 0;
+        }
+
+        /* ===== TOP BAR ===== */
+        .top-bar {
+            background-color: var(--purple-dark);
+            color: var(--white);
+            padding: 10px 0;
+            font-size: 0.85rem;
+        }
+
+        .top-bar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .top-bar a {
+            color: rgba(255,255,255,0.9);
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .top-bar a:hover {
+            color: var(--white);
+        }
+
+        .top-bar-left {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .top-bar-right {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+        }
+
+        .top-bar-right a {
+            font-size: 0.95rem;
+        }
+
+        .top-bar-right a:hover {
+            transform: translateY(-1px);
+        }
+
+        /* ===== NAVIGATION ===== */
+        .navbar {
+            background-color: var(--white);
+            box-shadow: var(--shadow-sm);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 24px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, var(--purple), var(--purple-light));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.4rem;
+            font-weight: 800;
+            font-family: 'Playfair Display', serif;
+            flex-shrink: 0;
+        }
+
+        .logo-text h2 {
+            font-size: 1.15rem;
+            font-weight: 800;
+            color: var(--purple-dark);
+            line-height: 1.2;
+        }
+
+        .logo-text span {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 500;
+            color: var(--grey);
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .nav-menu a {
+            padding: 8px 14px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--grey-dark);
+            border-radius: var(--radius-sm);
+            position: relative;
+        }
+
+        .nav-menu a:hover,
+        .nav-menu a.active {
+            color: var(--purple);
+            background-color: var(--purple-pale);
+        }
+
+        .nav-cta {
+            background-color: var(--purple) !important;
+            color: var(--white) !important;
+            padding: 10px 22px !important;
+            border-radius: 50px !important;
+            font-weight: 600 !important;
+            margin-left: 8px;
+        }
+
+        .nav-cta:hover {
+            background-color: var(--purple-dark) !important;
+            transform: translateY(-1px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .hamburger {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--purple-dark);
+            cursor: pointer;
+            padding: 8px;
+        }
+
+        /* ===== PAGE HERO ===== */
+        .page-hero {
+            background: linear-gradient(135deg, rgba(92, 53, 117, 0.93), rgba(123, 75, 154, 0.88)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1600&q=80') center/cover no-repeat;
+            color: var(--white);
+            padding: 100px 0 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .page-hero::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 60px;
+            background: linear-gradient(to top, var(--white), transparent);
+            pointer-events: none;
+        }
+
+        .page-hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .page-hero h1 {
+            font-size: 3rem;
+            color: var(--white);
+            margin-bottom: 16px;
+            letter-spacing: -0.5px;
+        }
+
+        .page-hero p {
+            font-size: 1.1rem;
+            color: rgba(255,255,255,0.9);
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        .breadcrumb {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+            font-size: 0.85rem;
+            color: rgba(255,255,255,0.7);
+        }
+
+        .breadcrumb a {
+            color: rgba(255,255,255,0.8);
+        }
+
+        .breadcrumb a:hover {
+            color: var(--white);
+        }
+
+        .breadcrumb i {
+            font-size: 0.6rem;
+        }
+
+        /* ===== SECTION HEADERS ===== */
+        .section-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 56px;
+        }
+
+        .section-label {
+            display: inline-block;
+            background-color: var(--purple-pale);
+            color: var(--purple);
+            padding: 6px 18px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+
+        .section-header h2 {
+            font-size: 2.4rem;
+            margin-bottom: 16px;
+            color: var(--text-dark);
+        }
+
+        .section-header p {
+            font-size: 1.05rem;
+            color: var(--grey);
+        }
+
+        /* ===== STORY SECTION ===== */
+        .story-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .story-image {
+            position: relative;
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .story-image img {
+            width: 100%;
+            height: 460px;
+            object-fit: cover;
+        }
+
+        .story-image::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            right: 20px;
+            bottom: 20px;
+            border: 3px solid var(--purple-light);
+            border-radius: var(--radius);
+            z-index: -1;
+        }
+
+        .story-text h2 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+        }
+
+        .story-text p {
+            margin-bottom: 18px;
+            font-size: 1.02rem;
+        }
+
+        .story-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background-color: var(--purple-pale);
+            padding: 12px 20px;
+            border-radius: var(--radius-sm);
+            margin-top: 10px;
+            color: var(--purple-dark);
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .story-badge i {
+            font-size: 1.1rem;
+        }
+
+        /* ===== VISION & MISSION ===== */
+        .vision-mission {
+            background-color: var(--grey-light);
+        }
+
+        .vm-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .vm-card {
+            background-color: var(--white);
+            padding: 50px 45px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid rgba(0,0,0,0.04);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .vm-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(to bottom, var(--purple), var(--purple-light));
+        }
+
+        .vm-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .vm-icon {
+            width: 65px;
+            height: 65px;
+            background: linear-gradient(135deg, var(--purple-pale), #E8D5F0);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: var(--purple);
+            margin-bottom: 24px;
+        }
+
+        .vm-card h3 {
+            font-size: 1.6rem;
+            margin-bottom: 16px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            color: var(--purple-dark);
+        }
+
+        .vm-card p {
+            font-size: 1rem;
+            color: var(--text-body);
+            line-height: 1.8;
+        }
+
+        /* ===== CORE VALUES ===== */
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .value-card {
+            background-color: var(--white);
+            padding: 40px 30px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            border: 1px solid rgba(0,0,0,0.04);
+            text-align: center;
+        }
+
+        .value-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-lg);
+            border-color: rgba(123, 75, 154, 0.2);
+        }
+
+        .value-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, var(--purple-pale), #E8D5F0);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 22px;
+            font-size: 1.6rem;
+            color: var(--purple);
+        }
+
+        .value-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 12px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+        }
+
+        .value-card p {
+            font-size: 0.95rem;
+            color: var(--grey);
+            line-height: 1.7;
+        }
+
+        /* ===== WHY CHOOSE US ===== */
+        .why-about {
+            background: linear-gradient(135deg, rgba(92, 53, 117, 0.95), rgba(123, 75, 154, 0.9)), url('https://images.unsplash.com/photo-1562774053-701939374585?w=1600&q=80') center/cover no-repeat fixed;
+            color: var(--white);
+        }
+
+        .why-about .section-header h2,
+        .why-about .section-header p {
+            color: var(--white);
+        }
+
+        .why-about .section-label {
+            background-color: rgba(255,255,255,0.15);
+            color: var(--white);
+        }
+
+        .why-about-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .why-about-card {
+            background-color: rgba(255,255,255,0.08);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: var(--radius);
+            padding: 40px 30px;
+            transition: var(--transition);
+        }
+
+        .why-about-card:hover {
+            background-color: rgba(255,255,255,0.12);
+            transform: translateY(-4px);
+        }
+
+        .why-about-card .value-icon {
+            background: rgba(255,255,255,0.15);
+            color: var(--white);
+            margin: 0 0 22px;
+        }
+
+        .why-about-card h3 {
+            color: var(--white);
+            font-size: 1.2rem;
+            margin-bottom: 12px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+        }
+
+        .why-about-card p {
+            color: rgba(255,255,255,0.85);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        /* ===== LEADERSHIP ===== */
+        .leadership-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .leader-card {
+            background-color: var(--white);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            border: 1px solid rgba(0,0,0,0.04);
+        }
+
+        .leader-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .leader-image {
+            height: 280px;
+            overflow: hidden;
+            background-color: var(--purple-pale);
+        }
+
+        .leader-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .leader-card:hover .leader-image img {
+            transform: scale(1.05);
+        }
+
+        .leader-content {
+            padding: 28px 24px;
+            text-align: center;
+        }
+
+        .leader-content h3 {
+            font-size: 1.2rem;
+            margin-bottom: 6px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+        }
+
+        .leader-content span {
+            display: block;
+            color: var(--purple);
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            margin-bottom: 14px;
+        }
+
+        .leader-content p {
+            font-size: 0.9rem;
+            color: var(--grey);
+            line-height: 1.7;
+        }
+
+        /* ===== CAMPUS / LOCATION ===== */
+        .campus-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .campus-text h2 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+        }
+
+        .campus-text p {
+            margin-bottom: 18px;
+            font-size: 1.02rem;
+        }
+
+        .campus-features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-top: 28px;
+        }
+
+        .campus-feature {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        .campus-feature i {
+            color: var(--purple);
+            font-size: 1.2rem;
+            margin-top: 3px;
+        }
+
+        .campus-feature span {
+            font-weight: 500;
+            color: var(--text-dark);
+            font-size: 0.95rem;
+        }
+
+        .campus-image {
+            position: relative;
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .campus-image img {
+            width: 100%;
+            height: 460px;
+            object-fit: cover;
+        }
+
+        .campus-image::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: 20px;
+            right: -20px;
+            bottom: 20px;
+            border: 3px solid var(--purple-light);
+            border-radius: var(--radius);
+            z-index: -1;
+        }
+
+        /* ===== CTA STRIP ===== */
+        .cta-strip {
+            background: linear-gradient(135deg, rgba(92, 53, 117, 0.92), rgba(123, 75, 154, 0.88)), url('https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=1600&q=80') center/cover no-repeat;
+            padding: 70px 0;
+            text-align: center;
+            color: var(--white);
+        }
+
+        .cta-strip h2 {
+            color: var(--white);
+            font-size: 2.2rem;
+            margin-bottom: 16px;
+        }
+
+        .cta-strip p {
+            color: rgba(255,255,255,0.85);
+            font-size: 1.05rem;
+            margin-bottom: 32px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 14px 32px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: var(--transition);
+        }
+
+        .btn-primary {
+            background-color: var(--white);
+            color: var(--purple-dark);
+        }
+
+        .btn-primary:hover {
+            background-color: #f0e6f5;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--white);
+            border-color: rgba(255,255,255,0.5);
+        }
+
+        .btn-outline:hover {
+            background-color: rgba(255,255,255,0.1);
+            border-color: var(--white);
+            transform: translateY(-2px);
+        }
+
+        /* ===== FOOTER ===== */
+        .footer {
+            background-color: #1A1025;
+            color: rgba(255,255,255,0.75);
+            padding: 70px 0 0;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1.5fr;
+            gap: 40px;
+            padding-bottom: 50px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .footer-brand .logo-text h2 {
+            color: var(--white);
+        }
+
+        .footer-brand .logo-text span {
+            color: rgba(255,255,255,0.5);
+        }
+
+        .footer-brand p {
+            margin-top: 18px;
+            font-size: 0.9rem;
+            line-height: 1.8;
+            max-width: 320px;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 12px;
+            margin-top: 22px;
+        }
+
+        .footer-social a {
+            width: 38px;
+            height: 38px;
+            background-color: rgba(255,255,255,0.08);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255,255,255,0.7);
+            font-size: 0.95rem;
+        }
+
+        .footer-social a:hover {
+            background-color: var(--purple);
+            color: var(--white);
+            transform: translateY(-2px);
+        }
+
+        .footer h4 {
+            color: var(--white);
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            letter-spacing: 0.5px;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .footer-links a {
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.65);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .footer-links a:hover {
+            color: var(--white);
+            padding-left: 4px;
+        }
+
+        .footer-contact {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .footer-contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            font-size: 0.9rem;
+        }
+
+        .footer-contact-item i {
+            color: var(--purple-light);
+            margin-top: 4px;
+            font-size: 0.95rem;
+        }
+
+        .footer-bottom {
+            padding: 24px 0;
+            text-align: center;
+            font-size: 0.85rem;
+            color: rgba(255,255,255,0.45);
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 1024px) {
+            .page-hero h1 { font-size: 2.5rem; }
+            .story-grid { grid-template-columns: 1fr; gap: 40px; }
+            .vm-grid { grid-template-columns: 1fr; }
+            .values-grid { grid-template-columns: repeat(2, 1fr); }
+            .why-about-grid { grid-template-columns: repeat(2, 1fr); }
+            .leadership-grid { grid-template-columns: repeat(2, 1fr); }
+            .campus-grid { grid-template-columns: 1fr; gap: 40px; }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+        }
+
+        @media (max-width: 768px) {
+            .top-bar .container { justify-content: center; text-align: center; }
+            .top-bar-left { justify-content: center; }
+            .top-bar-right { justify-content: center; }
+            
+            .nav-menu {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background-color: var(--white);
+                flex-direction: column;
+                padding: 16px 24px 24px;
+                box-shadow: var(--shadow-md);
+                gap: 4px;
+            }
+            .nav-menu.open { display: flex; }
+            .nav-menu a { width: 100%; padding: 12px 16px; }
+            .nav-cta { text-align: center; justify-content: center; margin-left: 0 !important; margin-top: 8px; }
+            .hamburger { display: block; }
+            .navbar .container { position: relative; }
+
+            .page-hero { padding: 70px 0 60px; }
+            .page-hero h1 { font-size: 2rem; }
+            .page-hero p { font-size: 1rem; }
+
+            .section-header h2 { font-size: 1.8rem; }
+            .section-padding { padding: 60px 0; }
+
+            .values-grid { grid-template-columns: 1fr; }
+            .why-about-grid { grid-template-columns: 1fr; }
+            .leadership-grid { grid-template-columns: 1fr; }
+            .campus-features { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr; gap: 30px; }
+            .hero-buttons { flex-direction: column; align-items: center; }
+        }
+
+        @media (max-width: 480px) {
+            .page-hero h1 { font-size: 1.7rem; }
+            .btn { width: 100%; justify-content: center; }
+            .logo-text h2 { font-size: 1rem; }
+            .logo-icon { width: 40px; height: 40px; font-size: 1.1rem; }
+            .vm-card { padding: 35px 25px; }
+        }
+
+        /* ===== ANIMATIONS ===== */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== TOP BAR ===== -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+                <a href="tel:+256700000000"><i class="fas fa-phone"></i> +256 700 000 000</a>
+                <a href="mailto:info@kasubiparents.ac.ug"><i class="fas fa-envelope"></i> info@kasubiparents.ac.ug</a>
+            </div>
+            <div class="top-bar-right">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="{% url 'home' %}" class="logo">
+                <div class="logo-icon">K</div>
+                <div class="logo-text">
+                    <h2>Kasubi Parents School</h2>
+                    <span>Rubaga Division, Kampala</span>
+                </div>
+            </a>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="nav-menu" id="navMenu">
+                <a href="{% url 'home' %}">Home</a>
+                <a href="{% url 'about' %}" class="active">About Us</a>
+                <a href="{% url 'academics' %}">Academics</a>
+                <a href="{% url 'gallery' %}">Gallery</a>
+                <a href="{% url 'news' %}">News</a>
+                <a href="{% url 'partnerships' %}">Partnerships</a>
+                <a href="{% url 'contact' %}">Contact Us</a>
+                <a href="{% url 'apply' %}" class="nav-cta">Apply Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== PAGE HERO ===== -->
+    <header class="page-hero">
+        <div class="container page-hero-content">
+            <div class="breadcrumb">
+                <a href="{% url 'home' %}">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>About Us</span>
+            </div>
+            <h1>About Our School</h1>
+            <p>
+                Discover the story, vision, and values that make Kasubi Parents Secondary 
+                School a special place for learning and growth.
+            </p>
+        </div>
+    </header>
+
+    <!-- ===== OUR STORY ===== -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="story-grid">
+                <div class="story-image fade-in">
+                    <img src="https://res.cloudinary.com/incarr/image/upload/v1790172397/aa_vcqlwo.png" alt="Kasubi Parents Secondary School campus">
+                </div>
+                <div class="story-text fade-in">
+                    <span class="section-label">Our Story</span>
+                    <h2>Building a Legacy of Excellence Since Day One</h2>
+                    <p>
+                        Kasubi Parents Secondary School was founded with a simple yet powerful 
+                        vision — to create a school where every child is given the opportunity to 
+                        shine. What began as a small community school has grown into a thriving 
+                        day and boarding secondary school, serving students from Senior One to 
+                        Senior Six.
+                    </p>
+                    <p>
+                        Located along Nabulagala Road in the Rubaga Division of Kampala, our 
+                        school sits in a peaceful and accessible environment that is ideal for 
+                        focused learning. Over the years, we have remained committed to providing 
+                        a well-rounded education that balances academic excellence with character 
+                        formation.
+                    </p>
+                    <p>
+                        Today, Kasubi Parents Secondary School stands as a place where students 
+                        are not only prepared for national examinations but are also equipped with 
+                        the values, skills, and confidence they need to succeed in life beyond the 
+                        classroom.
+                    </p>
+                    <div class="story-badge">
+                        <i class="fas fa-certificate"></i>
+                        Licensed by the Ministry of Education and Sports
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== VISION & MISSION ===== -->
+    <section class="section-padding vision-mission">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">Our Direction</span>
+                <h2>Vision & Mission</h2>
+                <p>The guiding principles that shape everything we do at Kasubi Parents Secondary School.</p>
+            </div>
+            <div class="vm-grid">
+                <div class="vm-card fade-in">
+                    <div class="vm-icon"><i class="fas fa-eye"></i></div>
+                    <h3>Our Vision</h3>
+                    <p>
+                        To be a leading secondary school that nurtures confident, disciplined, 
+                        and academically excellent learners — empowering them to become 
+                        responsible leaders and positive contributors to society. We envision a 
+                        community where every student discovers their God-given potential and 
+                        uses it to transform the world around them.
+                    </p>
+                </div>
+                <div class="vm-card fade-in">
+                    <div class="vm-icon"><i class="fas fa-bullseye"></i></div>
+                    <h3>Our Mission</h3>
+                    <p>
+                        To provide quality, holistic secondary education in a safe and caring 
+                        environment — through dedicated teaching, strong moral values, and a 
+                        supportive community. We are committed to helping every student achieve 
+                        academic success, develop good character, and grow into a lifelong 
+                        learner who serves others with integrity and compassion.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CORE VALUES ===== -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">What We Stand For</span>
+                <h2>Our Core Values</h2>
+                <p>The principles that guide our students, teachers, and entire school community every day.</p>
+            </div>
+            <div class="values-grid">
+                <div class="value-card fade-in">
+                    <div class="value-icon"><i class="fas fa-star"></i></div>
+                    <h3>Excellence</h3>
+                    <p>We pursue excellence in academics, character, and co-curricular activities — always striving to do our best and improve every day.</p>
+                </div>
+                <div class="value-card fade-in">
+                    <div class="value-icon"><i class="fas fa-handshake"></i></div>
+                    <h3>Integrity</h3>
+                    <p>We teach and model honesty, accountability, and strong moral principles — shaping students who do the right thing even when no one is watching.</p>
+                </div>
+                <div class="value-card fade-in">
+                    <div class="value-icon"><i class="fas fa-heart"></i></div>
+                    <h3>Compassion</h3>
+                    <p>We foster a culture of kindness, empathy, and respect — where every student feels valued, supported, and encouraged to care for others.</p>
+                </div>
+                <div class="value-card fade-in">
+                    <div class="value-icon"><i class="fas fa-users"></i></div>
+                    <h3>Community</h3>
+                    <p>We build strong partnerships between students, parents, teachers, and the wider community — because education is a shared responsibility.</p>
+                </div>
+                <div class="value-card fade-in">
+                    <div class="value-icon"><i class="fas fa-book-reader"></i></div>
+                    <h3>Lifelong Learning</h3>
+                    <p>We inspire curiosity and a love for learning that extends beyond the classroom — preparing students for a lifetime of growth and discovery.</p>
+                </div>
+                <div class="value-card fade-in">
+                    <div class="value-icon"><i class="fas fa-shield-halved"></i></div>
+                    <h3>Discipline</h3>
+                    <p>We believe that self-discipline and responsibility are essential foundations for success — in school, at home, and in the wider world.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== WHY CHOOSE US ===== -->
+    <section class="section-padding why-about">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">Why Kasubi Parents</span>
+                <h2>What Sets Us Apart</h2>
+                <p>There are many schools, but here is why families choose Kasubi Parents Secondary School.</p>
+            </div>
+            <div class="why-about-grid">
+                <div class="why-about-card fade-in">
+                    <div class="value-icon"><i class="fas fa-chalkboard-user"></i></div>
+                    <h3>Dedicated Teachers</h3>
+                    <p>Our teachers are not just qualified — they are passionate about helping each student succeed and go the extra mile to support learning.</p>
+                </div>
+                <div class="why-about-card fade-in">
+                    <div class="value-icon"><i class="fas fa-scale-balanced"></i></div>
+                    <h3>Strong Academics</h3>
+                    <p>We maintain high academic standards with a proven track record in both O-Level and A-Level UNEB examinations.</p>
+                </div>
+                <div class="why-about-card fade-in">
+                    <div class="value-icon"><i class="fas fa-user-graduate"></i></div>
+                    <h3>Individual Attention</h3>
+                    <p>With an 8:1 student-to-teacher ratio, we ensure that every student receives the attention and support they need to thrive.</p>
+                </div>
+                <div class="why-about-card fade-in">
+                    <div class="value-icon"><i class="fas fa-house-chimney"></i></div>
+                    <h3>Day & Boarding</h3>
+                    <p>We offer both day and boarding options — giving families the flexibility to choose what works best for their situation.</p>
+                </div>
+                <div class="why-about-card fade-in">
+                    <div class="value-icon"><i class="fas fa-futbol"></i></div>
+                    <h3>Co-Curricular Programs</h3>
+                    <p>Sports, clubs, and talent development activities help students discover their gifts and grow beyond the classroom.</p>
+                </div>
+                <div class="why-about-card fade-in">
+                    <div class="value-icon"><i class="fas fa-shield-heart"></i></div>
+                    <h3>Safe & Caring</h3>
+                    <p>A clean, secure, and nurturing environment where students feel safe to learn, grow, and be themselves.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== LEADERSHIP ===== -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">Our Team</span>
+                <h2>School Leadership</h2>
+                <p>Meet the dedicated leaders who guide our school community with vision, experience, and care.</p>
+            </div>
+            <div class="leadership-grid">
+                <div class="leader-card fade-in">
+                    <div class="leader-image">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&q=80" alt="Head Teacher">
+                    </div>
+                    <div class="leader-content">
+                        <h3>Head Teacher</h3>
+                        <span>School Administration</span>
+                        <p>Providing visionary leadership and overseeing the academic and co-curricular life of the school.</p>
+                    </div>
+                </div>
+                <div class="leader-card fade-in">
+                    <div class="leader-image">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&q=80" alt="Director of Studies">
+                    </div>
+                    <div class="leader-content">
+                        <h3>Director of Studies</h3>
+                        <span>Academic Affairs</span>
+                        <p>Coordinating curriculum delivery, examinations, and academic support programs across all levels.</p>
+                    </div>
+                </div>
+                <div class="leader-card fade-in">
+                    <div class="leader-image">
+                        <img src="https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=600&q=80" alt="Director of Student Affairs">
+                    </div>
+                    <div class="leader-content">
+                        <h3>Director of Student Affairs</h3>
+                        <span>Student Life & Welfare</span>
+                        <p>Overseeing discipline, boarding life, guidance and counseling, and student well-being.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CAMPUS & LOCATION ===== -->
+    <section class="section-padding vision-mission">
+        <div class="container">
+            <div class="campus-grid">
+                <div class="campus-text fade-in">
+                    <span class="section-label">Our Campus</span>
+                    <h2>A Safe & Supportive Learning Environment</h2>
+                    <p>
+                        Our campus along Nabulagala Road in the Rubaga Division of Kampala is 
+                        designed to support both academic learning and personal growth. With 
+                        clean, spacious classrooms, well-equipped science laboratories, a library, 
+                        and safe play areas, we provide an environment where students can focus, 
+                        explore, and thrive.
+                    </p>
+                    <p>
+                        We take pride in maintaining a clean and organized campus that reflects our 
+                        commitment to excellence and respect for our students and staff.
+                    </p>
+                    <div class="campus-features">
+                        <div class="campus-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Spacious & Clean Classrooms</span>
+                        </div>
+                        <div class="campus-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Science Laboratories</span>
+                        </div>
+                        <div class="campus-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Library & Reading Spaces</span>
+                        </div>
+                        <div class="campus-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Safe Play & Sports Areas</span>
+                        </div>
+                        <div class="campus-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Boarding Facilities</span>
+                        </div>
+                        <div class="campus-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>24/7 Security</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="campus-image fade-in">
+                    <img src="https://res.cloudinary.com/incarr/image/upload/v1790172397/aa_vcqlwo.png" alt="Kasubi Parents Secondary School campus">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA STRIP ===== -->
+    <section class="cta-strip">
+        <div class="container fade-in">
+            <h2>Become Part of Our Story</h2>
+            <p>We would love to welcome your child into the Kasubi Parents family. Start your application or reach out to us today.</p>
+            <div class="hero-buttons">
+                <a href="{% url 'apply' %}" class="btn btn-primary">
+                    <i class="fas fa-pen-to-square"></i> Begin Admission Process
+                </a>
+                <a href="{% url 'contact' %}" class="btn btn-outline" style="border-color: rgba(255,255,255,0.5);">
+                    <i class="fas fa-phone"></i> Contact Us Today
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-icon">K</div>
+                        <div class="logo-text">
+                            <h2>Kasubi Parents Secondary School</h2>
+                            <span>Rubaga Division, Kampala</span>
+                        </div>
+                    </div>
+                    <p>
+                        A licensed day and boarding secondary school along Nabulagala Road in the 
+                        Rubaga Division of Kampala — offering O-Level and A-Level education rooted 
+                        in strong academics, character, and community.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <div class="footer-links">
+                        <a href="{% url 'about' %}"><i class="fas fa-chevron-right"></i> About Us</a>
+                        <a href="{% url 'academics' %}"><i class="fas fa-chevron-right"></i> Academics</a>
+                        <a href="{% url 'apply' %}"><i class="fas fa-chevron-right"></i> Admissions</a>
+                        <a href="{% url 'gallery' %}"><i class="fas fa-chevron-right"></i> Gallery</a>
+                        <a href="{% url 'news' %}"><i class="fas fa-chevron-right"></i> News</a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Our School</h4>
+                    <div class="footer-links">
+                        <a href="{% url 'partnerships' %}"><i class="fas fa-chevron-right"></i> Partnerships</a>
+                        <a href="{% url 'contact' %}"><i class="fas fa-chevron-right"></i> Contact Us</a>
+                        <a href="#"><i class="fas fa-chevron-right"></i> Day & Boarding</a>
+                        <a href="#"><i class="fas fa-chevron-right"></i> O & A-Level</a>
+                        <a href="#"><i class="fas fa-chevron-right"></i> Co-Curricular</a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Contact Info</h4>
+                    <div class="footer-contact">
+                        <div class="footer-contact-item">
+                            <i class="fas fa-location-dot"></i>
+                            <span>Nabulagala Road, Rubaga Division<br>Kampala, Uganda</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+256 700 000 000</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@kasubiparents.ac.ug</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Mon – Fri: 8:00 AM – 5:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Kasubi Parents Secondary School. All Rights Reserved. | Licensed by the Ministry of Education and Sports.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== JAVASCRIPT ===== -->
+    <script>
+        // Mobile Menu Toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('open');
+            const icon = hamburger.querySelector('i');
+            if (navMenu.classList.contains('open')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        // Close menu when a link is clicked
+        navMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('open');
+                const icon = hamburger.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            });
+        });
+
+        // Scroll Fade-In Animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+
+</body>
+</html>

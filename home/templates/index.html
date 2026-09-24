@@ -1,0 +1,1372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kasubi Parents Secondary School - A premier day and boarding secondary school along Nabulagala Road in Rubaga Division, Kampala, Uganda. Offering O-Level and A-Level education with strong academics, caring teachers, and a nurturing environment.">
+    <title>Kasubi Parents Secondary School | Day & Boarding | O & A-Level | Kampala</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        /* ===== CSS VARIABLES ===== */
+        :root {
+            --purple: #7B4B9A;
+            --purple-dark: #5C3575;
+            --purple-light: #9B6BB5;
+            --purple-pale: #F3EDF7;
+            --grey: #6B7280;
+            --grey-light: #F5F6F8;
+            --grey-dark: #374151;
+            --white: #FFFFFF;
+            --off-white: #FAFAFA;
+            --text-dark: #1F2937;
+            --text-body: #4B5563;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+            --shadow-md: 0 4px 16px rgba(0,0,0,0.10);
+            --shadow-lg: 0 10px 40px rgba(0,0,0,0.12);
+            --radius: 12px;
+            --radius-sm: 8px;
+            --transition: all 0.3s ease;
+        }
+
+        /* ===== RESET & BASE ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--text-body);
+            background-color: var(--white);
+            line-height: 1.7;
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            color: var(--text-dark);
+            line-height: 1.25;
+            font-weight: 700;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .section-padding {
+            padding: 90px 0;
+        }
+
+        .section-padding-sm {
+            padding: 60px 0;
+        }
+
+        /* ===== TOP BAR ===== */
+        .top-bar {
+            background-color: var(--purple-dark);
+            color: var(--white);
+            padding: 10px 0;
+            font-size: 0.85rem;
+        }
+
+        .top-bar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .top-bar a {
+            color: rgba(255,255,255,0.9);
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .top-bar a:hover {
+            color: var(--white);
+        }
+
+        .top-bar-left {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .top-bar-right {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+        }
+
+        .top-bar-right a {
+            font-size: 0.95rem;
+        }
+
+        .top-bar-right a:hover {
+            transform: translateY(-1px);
+        }
+
+        /* ===== NAVIGATION ===== */
+        .navbar {
+            background-color: var(--white);
+            box-shadow: var(--shadow-sm);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 24px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, var(--purple), var(--purple-light));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.4rem;
+            font-weight: 800;
+            font-family: 'Playfair Display', serif;
+            flex-shrink: 0;
+        }
+
+        .logo-text h2 {
+            font-size: 1.15rem;
+            font-weight: 800;
+            color: var(--purple-dark);
+            line-height: 1.2;
+        }
+
+        .logo-text span {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 500;
+            color: var(--grey);
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .nav-menu a {
+            padding: 8px 14px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--grey-dark);
+            border-radius: var(--radius-sm);
+            position: relative;
+        }
+
+        .nav-menu a:hover,
+        .nav-menu a.active {
+            color: var(--purple);
+            background-color: var(--purple-pale);
+        }
+
+        .nav-cta {
+            background-color: var(--purple) !important;
+            color: var(--white) !important;
+            padding: 10px 22px !important;
+            border-radius: 50px !important;
+            font-weight: 600 !important;
+            margin-left: 8px;
+        }
+
+        .nav-cta:hover {
+            background-color: var(--purple-dark) !important;
+            transform: translateY(-1px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .hamburger {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--purple-dark);
+            cursor: pointer;
+            padding: 8px;
+        }
+
+        /* ===== HERO SECTION ===== */
+        .hero {
+            background: linear-gradient(135deg, rgba(92, 53, 117, 0.92), rgba(123, 75, 154, 0.88)), url('https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=1600&q=80') center/cover no-repeat;
+            color: var(--white);
+            padding: 120px 0 100px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 80px;
+            background: linear-gradient(to top, var(--white), transparent);
+            pointer-events: none;
+        }
+
+        .hero-content {
+            max-width: 850px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background-color: rgba(255,255,255,0.15);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.25);
+            padding: 8px 22px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            margin-bottom: 24px;
+        }
+
+        .hero h1 {
+            font-size: 3.4rem;
+            color: var(--white);
+            margin-bottom: 20px;
+            letter-spacing: -0.5px;
+        }
+
+        .hero h1 span {
+            color: #E8D5F0;
+        }
+
+        .hero p {
+            font-size: 1.15rem;
+            color: rgba(255,255,255,0.9);
+            max-width: 650px;
+            margin: 0 auto 36px;
+            line-height: 1.8;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 14px 32px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: var(--transition);
+        }
+
+        .btn-primary {
+            background-color: var(--white);
+            color: var(--purple-dark);
+        }
+
+        .btn-primary:hover {
+            background-color: #f0e6f5;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--white);
+            border-color: rgba(255,255,255,0.5);
+        }
+
+        .btn-outline:hover {
+            background-color: rgba(255,255,255,0.1);
+            border-color: var(--white);
+            transform: translateY(-2px);
+        }
+
+        /* ===== STATS BAR ===== */
+        .stats-bar {
+            background: linear-gradient(135deg, rgba(243, 237, 247, 0.95), rgba(232, 213, 240, 0.9)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1600&q=80') center/cover no-repeat;
+            padding: 50px 0;
+            border-bottom: 1px solid rgba(123, 75, 154, 0.1);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            text-align: center;
+        }
+
+        .stat-item h3 {
+            font-size: 2.6rem;
+            color: var(--purple);
+            font-weight: 800;
+            margin-bottom: 4px;
+        }
+
+        .stat-item p {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--grey-dark);
+        }
+
+        /* ===== SECTION HEADERS ===== */
+        .section-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 56px;
+        }
+
+        .section-label {
+            display: inline-block;
+            background-color: var(--purple-pale);
+            color: var(--purple);
+            padding: 6px 18px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+
+        .section-header h2 {
+            font-size: 2.4rem;
+            margin-bottom: 16px;
+            color: var(--text-dark);
+        }
+
+        .section-header p {
+            font-size: 1.05rem;
+            color: var(--grey);
+        }
+
+        /* ===== WELCOME SECTION ===== */
+        .welcome-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .welcome-image {
+            position: relative;
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .welcome-image img {
+            width: 100%;
+            height: 420px;
+            object-fit: cover;
+        }
+
+        .welcome-image::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            right: 20px;
+            bottom: 20px;
+            border: 3px solid var(--purple-light);
+            border-radius: var(--radius);
+            z-index: -1;
+        }
+
+        .welcome-text h2 {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+        }
+
+        .welcome-text p {
+            margin-bottom: 18px;
+            font-size: 1.02rem;
+        }
+
+        .welcome-features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-top: 30px;
+        }
+
+        .welcome-feature {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        .welcome-feature i {
+            color: var(--purple);
+            font-size: 1.2rem;
+            margin-top: 3px;
+        }
+
+        .welcome-feature span {
+            font-weight: 500;
+            color: var(--text-dark);
+            font-size: 0.95rem;
+        }
+
+        /* ===== WHY CHOOSE US ===== */
+        .why-choose {
+            background-color: var(--grey-light);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .feature-card {
+            background-color: var(--white);
+            padding: 40px 30px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            border: 1px solid rgba(0,0,0,0.04);
+            text-align: center;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-lg);
+            border-color: rgba(123, 75, 154, 0.2);
+        }
+
+        .feature-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, var(--purple-pale), #E8D5F0);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 22px;
+            font-size: 1.6rem;
+            color: var(--purple);
+        }
+
+        .feature-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 12px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+        }
+
+        .feature-card p {
+            font-size: 0.95rem;
+            color: var(--grey);
+            line-height: 1.7;
+        }
+
+        /* ===== ACADEMICS SNAPSHOT ===== */
+        .academics-snapshot {
+            background: linear-gradient(135deg, rgba(92, 53, 117, 0.95), rgba(123, 75, 154, 0.9)), url('https://images.unsplash.com/photo-1562774053-701939374585?w=1600&q=80') center/cover no-repeat fixed;
+            color: var(--white);
+        }
+
+        .academics-snapshot .section-header h2,
+        .academics-snapshot .section-header p {
+            color: var(--white);
+        }
+
+        .academics-snapshot .section-label {
+            background-color: rgba(255,255,255,0.15);
+            color: var(--white);
+        }
+
+        .academics-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .academic-card {
+            background-color: rgba(255,255,255,0.08);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: var(--radius);
+            padding: 40px;
+            transition: var(--transition);
+        }
+
+        .academic-card:hover {
+            background-color: rgba(255,255,255,0.12);
+            transform: translateY(-4px);
+        }
+
+        .academic-card h3 {
+            color: var(--white);
+            font-size: 1.5rem;
+            margin-bottom: 16px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+        }
+
+        .academic-card p {
+            color: rgba(255,255,255,0.85);
+            margin-bottom: 20px;
+            font-size: 0.98rem;
+        }
+
+        .academic-card ul {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .academic-card ul li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: rgba(255,255,255,0.9);
+            font-size: 0.95rem;
+        }
+
+        .academic-card ul li i {
+            color: #E8D5F0;
+            font-size: 0.8rem;
+        }
+
+        /* ===== BOARDING & DAY ===== */
+        .boarding-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .boarding-card {
+            padding: 50px 45px;
+            position: relative;
+        }
+
+        .boarding-card:first-child {
+            background-color: var(--purple-pale);
+        }
+
+        .boarding-card:last-child {
+            background-color: var(--white);
+            border: 1px solid rgba(0,0,0,0.06);
+        }
+
+        .boarding-card h3 {
+            font-size: 1.6rem;
+            margin-bottom: 16px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            color: var(--purple-dark);
+        }
+
+        .boarding-card p {
+            margin-bottom: 24px;
+            font-size: 0.98rem;
+        }
+
+        .boarding-card ul {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .boarding-card ul li {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            font-size: 0.95rem;
+            color: var(--grey-dark);
+        }
+
+        .boarding-card ul li i {
+            color: var(--purple);
+            margin-top: 4px;
+        }
+
+        /* ===== NEWS SECTION ===== */
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .news-card {
+            background-color: var(--white);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            border: 1px solid rgba(0,0,0,0.04);
+        }
+
+        .news-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .news-image {
+            position: relative;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .news-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .news-card:hover .news-image img {
+            transform: scale(1.05);
+        }
+
+        .news-date {
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            background-color: var(--purple);
+            color: var(--white);
+            padding: 6px 14px;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .news-content {
+            padding: 26px 24px;
+        }
+
+        .news-content h3 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            line-height: 1.4;
+        }
+
+        .news-content p {
+            font-size: 0.9rem;
+            color: var(--grey);
+            margin-bottom: 16px;
+        }
+
+        .news-link {
+            color: var(--purple);
+            font-weight: 600;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .news-link:hover {
+            gap: 10px;
+        }
+
+        /* ===== CTA STRIP ===== */
+        .cta-strip {
+            background: linear-gradient(135deg, rgba(92, 53, 117, 0.92), rgba(123, 75, 154, 0.88)), url('https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=1600&q=80') center/cover no-repeat;
+            padding: 70px 0;
+            text-align: center;
+            color: var(--white);
+        }
+
+        .cta-strip h2 {
+            color: var(--white);
+            font-size: 2.2rem;
+            margin-bottom: 16px;
+        }
+
+        .cta-strip p {
+            color: rgba(255,255,255,0.85);
+            font-size: 1.05rem;
+            margin-bottom: 32px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-strip .btn-primary {
+            background-color: var(--white);
+            color: var(--purple-dark);
+        }
+
+        .cta-strip .btn-primary:hover {
+            background-color: #f0e6f5;
+        }
+
+        /* ===== FOOTER ===== */
+        .footer {
+            background-color: #1A1025;
+            color: rgba(255,255,255,0.75);
+            padding: 70px 0 0;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1.5fr;
+            gap: 40px;
+            padding-bottom: 50px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .footer-brand .logo-text h2 {
+            color: var(--white);
+        }
+
+        .footer-brand .logo-text span {
+            color: rgba(255,255,255,0.5);
+        }
+
+        .footer-brand p {
+            margin-top: 18px;
+            font-size: 0.9rem;
+            line-height: 1.8;
+            max-width: 320px;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 12px;
+            margin-top: 22px;
+        }
+
+        .footer-social a {
+            width: 38px;
+            height: 38px;
+            background-color: rgba(255,255,255,0.08);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255,255,255,0.7);
+            font-size: 0.95rem;
+        }
+
+        .footer-social a:hover {
+            background-color: var(--purple);
+            color: var(--white);
+            transform: translateY(-2px);
+        }
+
+        .footer h4 {
+            color: var(--white);
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            letter-spacing: 0.5px;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .footer-links a {
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.65);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .footer-links a:hover {
+            color: var(--white);
+            padding-left: 4px;
+        }
+
+        .footer-contact {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .footer-contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            font-size: 0.9rem;
+        }
+
+        .footer-contact-item i {
+            color: var(--purple-light);
+            margin-top: 4px;
+            font-size: 0.95rem;
+        }
+
+        .footer-bottom {
+            padding: 24px 0;
+            text-align: center;
+            font-size: 0.85rem;
+            color: rgba(255,255,255,0.45);
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 1024px) {
+            .hero h1 { font-size: 2.8rem; }
+            .welcome-grid { grid-template-columns: 1fr; gap: 40px; }
+            .features-grid { grid-template-columns: repeat(2, 1fr); }
+            .academics-grid { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+        }
+
+        @media (max-width: 768px) {
+            .top-bar .container { justify-content: center; text-align: center; }
+            .top-bar-left { justify-content: center; }
+            .top-bar-right { justify-content: center; }
+            
+            .nav-menu {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background-color: var(--white);
+                flex-direction: column;
+                padding: 16px 24px 24px;
+                box-shadow: var(--shadow-md);
+                gap: 4px;
+            }
+            .nav-menu.open { display: flex; }
+            .nav-menu a { width: 100%; padding: 12px 16px; }
+            .nav-cta { text-align: center; justify-content: center; margin-left: 0 !important; margin-top: 8px; }
+            .hamburger { display: block; }
+            .navbar .container { position: relative; }
+
+            .hero { padding: 80px 0 70px; }
+            .hero h1 { font-size: 2.1rem; }
+            .hero p { font-size: 1rem; }
+
+            .section-header h2 { font-size: 1.8rem; }
+            .section-padding { padding: 60px 0; }
+
+            .features-grid { grid-template-columns: 1fr; }
+            .boarding-grid { grid-template-columns: 1fr; }
+            .news-grid { grid-template-columns: 1fr; }
+            .welcome-features { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr; gap: 30px; }
+            .stats-grid { grid-template-columns: 1fr 1fr; }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 { font-size: 1.8rem; }
+            .hero-buttons { flex-direction: column; align-items: center; }
+            .btn { width: 100%; justify-content: center; }
+            .stats-grid { grid-template-columns: 1fr; }
+            .logo-text h2 { font-size: 1rem; }
+            .logo-icon { width: 40px; height: 40px; font-size: 1.1rem; }
+        }
+
+        /* ===== ANIMATIONS ===== */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- ===== TOP BAR ===== -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+                <a href="tel:+256700000000"><i class="fas fa-phone"></i> +256 700 000 000</a>
+                <a href="mailto:info@kasubiparents.ac.ug"><i class="fas fa-envelope"></i> info@kasubiparents.ac.ug</a>
+            </div>
+            <div class="top-bar-right">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="{% url 'home' %}" class="logo">
+                <div class="logo-icon">K</div>
+                <div class="logo-text">
+                    <h2>Kasubi Parents School</h2>
+                    <span>Rubaga Division, Kampala</span>
+                </div>
+            </a>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="nav-menu" id="navMenu">
+                <a href="{% url 'home' %}" class="active">Home</a>
+                <a href="{% url 'about' %}">About Us</a>
+                <a href="{% url 'academics' %}">Academics</a>
+                <a href="{% url 'gallery' %}">Gallery</a>
+                <a href="{% url 'news' %}">News</a>
+                <a href="{% url 'partnerships' %}">Partnerships</a>
+                <a href="{% url 'contact' %}">Contact Us</a>
+                <a href="{% url 'apply' %}" class="nav-cta">Apply Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <header class="hero">
+        <div class="container hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-graduation-cap"></i> Licensed by the Ministry of Education and Sports
+            </div>
+            <h1>A Place Where Every Child <span>Begins to Shine</span></h1>
+            <p>
+                A premier day and boarding secondary school along Nabulagala Road in the 
+                Rubaga Division of Kampala — offering O-Level and A-Level education in a 
+                safe, nurturing, and academically driven environment.
+            </p>
+            <div class="hero-buttons">
+                <a href="{% url 'apply' %}" class="btn btn-primary">
+                    <i class="fas fa-pen-to-square"></i> Start Your Application
+                </a>
+                <a href="{% url 'contact' %}" class="btn btn-outline">
+                    <i class="fas fa-calendar-check"></i> Book a School Visit
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== STATS BAR ===== -->
+    <section class="stats-bar">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item fade-in">
+                    <h3>8:1</h3>
+                    <p>Student to Teacher Ratio</p>
+                </div>
+                <div class="stat-item fade-in">
+                    <h3>O & A</h3>
+                    <p>Level Education Offered</p>
+                </div>
+                <div class="stat-item fade-in">
+                    <h3>Day &</h3>
+                    <p>Boarding Sections</p>
+                </div>
+                <div class="stat-item fade-in">
+                    <h3>100%</h3>
+                    <p>Commitment to Excellence</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== WELCOME SECTION ===== -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="welcome-grid">
+                <div class="welcome-image fade-in">
+                    <img src="https://res.cloudinary.com/incarr/image/upload/v1790172397/aa_vcqlwo.png" alt="Students at Kasubi Parents Secondary School">
+                </div>
+                <div class="welcome-text fade-in">
+                    <span class="section-label">Welcome to Kasubi Parents</span>
+                    <h2>Nurturing Confident Learners & Future Leaders</h2>
+                    <p>
+                        At Kasubi Parents Secondary School, we provide a nurturing foundation 
+                        for confident learners. Our school is a compassionate community built on 
+                        a simple, child-centered approach that supports both academic learning 
+                        and character growth.
+                    </p>
+                    <p>
+                        Located along Nabulagala Road in the Rubaga Division of Kampala, we guide 
+                        our students from Senior One to Senior Six through a transformative 
+                        journey — equipping them with the knowledge, skills, and values they need 
+                        to thrive in a rapidly changing world.
+                    </p>
+                    <div class="welcome-features">
+                        <div class="welcome-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Safe & Child-Friendly Environment</span>
+                        </div>
+                        <div class="welcome-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Experienced & Caring Teachers</span>
+                        </div>
+                        <div class="welcome-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Clean & Supportive Spaces</span>
+                        </div>
+                        <div class="welcome-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Character-First Education</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== WHY CHOOSE US ===== -->
+    <section class="section-padding why-choose">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">Why Choose Kasubi Parents</span>
+                <h2>An Education That Builds Character & Excellence</h2>
+                <p>We combine strong academics with a caring, values-driven community — giving every student the foundation they need to succeed.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card fade-in">
+                    <div class="feature-icon"><i class="fas fa-book-open"></i></div>
+                    <h3>Strong Academics</h3>
+                    <p>We build confident learners through quality teaching, a rich curriculum, and consistent academic support for every student.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon"><i class="fas fa-heart"></i></div>
+                    <h3>Caring Teachers</h3>
+                    <p>Our dedicated staff know each student by name and are committed to their academic and personal growth.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon"><i class="fas fa-shield-halved"></i></div>
+                    <h3>Safe Environment</h3>
+                    <p>A secure, clean, and child-friendly campus where students feel safe to learn, explore, and grow.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon"><i class="fas fa-medal"></i></div>
+                    <h3>Co-Curricular Programs</h3>
+                    <p>Sports, clubs, and talent development programs that help students discover and nurture their God-given abilities.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon"><i class="fas fa-people-group"></i></div>
+                    <h3>Character First</h3>
+                    <p>We prioritize integrity, respect, and responsibility — shaping students into principled leaders of tomorrow.</p>
+                </div>
+                <div class="feature-card fade-in">
+                    <div class="feature-icon"><i class="fas fa-house"></i></div>
+                    <h3>Day & Boarding</h3>
+                    <p>Flexible options for families — with a supportive boarding section and a vibrant day community.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ACADEMICS SNAPSHOT ===== -->
+    <section class="section-padding academics-snapshot">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">Our Academics</span>
+                <h2>O-Level & A-Level Excellence</h2>
+                <p>We offer a comprehensive secondary education designed to prepare students for UNEB examinations and beyond.</p>
+            </div>
+            <div class="academics-grid">
+                <div class="academic-card fade-in">
+                    <h3><i class="fas fa-book"></i> O-Level (S1 – S4)</h3>
+                    <p>Our O-Level program provides a strong academic foundation across the sciences, arts, and humanities — preparing students for success in their UCE examinations.</p>
+                    <ul>
+                        <li><i class="fas fa-circle-check"></i> Sciences: Biology, Chemistry, Physics</li>
+                        <li><i class="fas fa-circle-check"></i> Mathematics & ICT</li>
+                        <li><i class="fas fa-circle-check"></i> Languages: English, Literature, Luganda</li>
+                        <li><i class="fas fa-circle-check"></i> Humanities: History, Geography, CRE</li>
+                        <li><i class="fas fa-circle-check"></i> Business & Technical Subjects</li>
+                    </ul>
+                </div>
+                <div class="academic-card fade-in">
+                    <h3><i class="fas fa-graduation-cap"></i> A-Level (S5 – S6)</h3>
+                    <p>Our A-Level program offers specialized subject combinations that prepare students for university education and professional careers.</p>
+                    <ul>
+                        <li><i class="fas fa-circle-check"></i> Sciences: PCB, PCM, BCM, PEM</li>
+                        <li><i class="fas fa-circle-check"></i> Arts: HEG, HEL, HED, EDP</li>
+                        <li><i class="fas fa-circle-check"></i> Subsidiary ICT & General Paper</li>
+                        <li><i class="fas fa-circle-check"></i> Career Guidance & University Prep</li>
+                        <li><i class="fas fa-circle-check"></i> Academic Mentorship Programs</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== BOARDING & DAY ===== -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">Student Life</span>
+                <h2>Day & Boarding Options</h2>
+                <p>Whether your child joins us as a day scholar or a boarder, they become part of a supportive community that feels like home.</p>
+            </div>
+            <div class="boarding-grid">
+                <div class="boarding-card fade-in">
+                    <h3><i class="fas fa-sun"></i> Day Section</h3>
+                    <p>Our day section offers a vibrant, structured learning environment for students who live nearby. Day scholars enjoy full access to all academic and co-curricular programs.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Structured daily timetable</li>
+                        <li><i class="fas fa-check"></i> Access to all facilities & clubs</li>
+                        <li><i class="fas fa-check"></i> Hot lunch program available</li>
+                        <li><i class="fas fa-check"></i> Safe drop-off and pick-up routines</li>
+                    </ul>
+                </div>
+                <div class="boarding-card fade-in">
+                    <h3><i class="fas fa-moon"></i> Boarding Section</h3>
+                    <p>Our boarding section provides a secure, disciplined, and nurturing home away from home — with supervised study, balanced meals, and a supportive community.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Supervised evening & morning prep</li>
+                        <li><i class="fas fa-check"></i> Clean, spacious dormitories</li>
+                        <li><i class="fas fa-check"></i> Balanced, nutritious meals</li>
+                        <li><i class="fas fa-check"></i> 24/7 matron & security presence</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== NEWS SECTION ===== -->
+    <section class="section-padding why-choose">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">Latest Updates</span>
+                <h2>News & Events at Kasubi Parents</h2>
+                <p>Stay informed about what's happening in our school community — from academic achievements to upcoming events.</p>
+            </div>
+            <div class="news-grid">
+                <article class="news-card fade-in">
+                    <div class="news-image">
+                        <img src="https://res.cloudinary.com/incarr/image/upload/v1790172397/aa_vcqlwo.png" alt="Students celebrating results">
+                        <span class="news-date">Coming Soon</span>
+                    </div>
+                    <div class="news-content">
+                        <h3>Outstanding UNEB Performance</h3>
+                        <p>We are proud to announce another year of excellent results in both UCE and UACE examinations...</p>
+                        <a href="{% url 'news' %}" class="news-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="news-card fade-in">
+                    <div class="news-image">
+                        <img src="https://res.cloudinary.com/incarr/image/upload/v1790172397/aa_vcqlwo.png" alt="Students in science lab">
+                        <span class="news-date">Coming Soon</span>
+                    </div>
+                    <div class="news-content">
+                        <h3>New Science Laboratory Equipment</h3>
+                        <p>Our science department has received new laboratory equipment to enhance practical learning...</p>
+                        <a href="{% url 'news' %}" class="news-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="news-card fade-in">
+                    <div class="news-image">
+                        <img src="https://res.cloudinary.com/incarr/image/upload/v1790172397/aa_vcqlwo.png" alt="Sports day">
+                        <span class="news-date">Coming Soon</span>
+                    </div>
+                    <div class="news-content">
+                        <h3>Annual Sports Day & Talent Show</h3>
+                        <p>Join us for our annual inter-house sports competition and talent showcase this term...</p>
+                        <a href="{% url 'news' %}" class="news-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA STRIP ===== -->
+    <section class="cta-strip">
+        <div class="container fade-in">
+            <h2>Ready to Join the Kasubi Parents Family?</h2>
+            <p>Start your application, ask questions, or plan a school visit. We are happy to help you choose the best path for your child.</p>
+            <div class="hero-buttons">
+                <a href="{% url 'apply' %}" class="btn btn-primary">
+                    <i class="fas fa-pen-to-square"></i> Begin Admission Process
+                </a>
+                <a href="{% url 'contact' %}" class="btn btn-outline" style="border-color: rgba(255,255,255,0.5);">
+                    <i class="fas fa-phone"></i> Contact Us Today
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-icon">K</div>
+                        <div class="logo-text">
+                            <h2>Kasubi Parents Secondary School</h2>
+                            <span>Rubaga Division, Kampala</span>
+                        </div>
+                    </div>
+                    <p>
+                        A licensed day and boarding secondary school along Nabulagala Road in the 
+                        Rubaga Division of Kampala — offering O-Level and A-Level education rooted 
+                        in strong academics, character, and community.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <div class="footer-links">
+                        <a href="{% url 'about' %}"><i class="fas fa-chevron-right"></i> About Us</a>
+                        <a href="{% url 'academics' %}"><i class="fas fa-chevron-right"></i> Academics</a>
+                        <a href="{% url 'apply' %}"><i class="fas fa-chevron-right"></i> Admissions</a>
+                        <a href="{% url 'gallery' %}"><i class="fas fa-chevron-right"></i> Gallery</a>
+                        <a href="{% url 'news' %}"><i class="fas fa-chevron-right"></i> News</a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Our School</h4>
+                    <div class="footer-links">
+                        <a href="{% url 'partnerships' %}"><i class="fas fa-chevron-right"></i> Partnerships</a>
+                        <a href="{% url 'contact' %}"><i class="fas fa-chevron-right"></i> Contact Us</a>
+                        <a href="#"><i class="fas fa-chevron-right"></i> Day & Boarding</a>
+                        <a href="#"><i class="fas fa-chevron-right"></i> O & A-Level</a>
+                        <a href="#"><i class="fas fa-chevron-right"></i> Co-Curricular</a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Contact Info</h4>
+                    <div class="footer-contact">
+                        <div class="footer-contact-item">
+                            <i class="fas fa-location-dot"></i>
+                            <span>Nabulagala Road, Rubaga Division<br>Kampala, Uganda</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+256 700 000 000</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@kasubiparents.ac.ug</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Mon – Fri: 8:00 AM – 5:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Kasubi Parents Secondary School. All Rights Reserved. | Licensed by the Ministry of Education and Sports.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== JAVASCRIPT ===== -->
+    <script>
+        // Mobile Menu Toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('open');
+            const icon = hamburger.querySelector('i');
+            if (navMenu.classList.contains('open')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        // Close menu when a link is clicked
+        navMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('open');
+                const icon = hamburger.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            });
+        });
+
+        // Scroll Fade-In Animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+
+</body>
+</html>

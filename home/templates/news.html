@@ -1,0 +1,1530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="News & Events at Kasubi Parents Secondary School - Stay updated with the latest announcements, academic achievements, upcoming events, and school news in Rubaga Division, Kampala.">
+    <title>News & Events | Kasubi Parents Secondary School</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        /* ===== CSS VARIABLES ===== */
+        :root {
+            --purple: #7B4B9A;
+            --purple-dark: #5C3575;
+            --purple-light: #9B6BB5;
+            --purple-pale: #F3EDF7;
+            --grey: #6B7280;
+            --grey-light: #F5F6F8;
+            --grey-dark: #374151;
+            --white: #FFFFFF;
+            --off-white: #FAFAFA;
+            --text-dark: #1F2937;
+            --text-body: #4B5563;
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+            --shadow-md: 0 4px 16px rgba(0,0,0,0.10);
+            --shadow-lg: 0 10px 40px rgba(0,0,0,0.12);
+            --radius: 12px;
+            --radius-sm: 8px;
+            --transition: all 0.3s ease;
+        }
+
+        /* ===== RESET & BASE ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--text-body);
+            background-color: var(--white);
+            line-height: 1.7;
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            color: var(--text-dark);
+            line-height: 1.25;
+            font-weight: 700;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .section-padding {
+            padding: 90px 0;
+        }
+
+        .section-padding-sm {
+            padding: 60px 0;
+        }
+
+        /* ===== TOP BAR ===== */
+        .top-bar {
+            background-color: var(--purple-dark);
+            color: var(--white);
+            padding: 10px 0;
+            font-size: 0.85rem;
+        }
+
+        .top-bar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .top-bar a {
+            color: rgba(255,255,255,0.9);
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .top-bar a:hover {
+            color: var(--white);
+        }
+
+        .top-bar-left {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .top-bar-right {
+            display: flex;
+            gap: 16px;
+            align-items: center;
+        }
+
+        .top-bar-right a {
+            font-size: 0.95rem;
+        }
+
+        .top-bar-right a:hover {
+            transform: translateY(-1px);
+        }
+
+        /* ===== NAVIGATION ===== */
+        .navbar {
+            background-color: var(--white);
+            box-shadow: var(--shadow-sm);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 24px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-icon {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, var(--purple), var(--purple-light));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.4rem;
+            font-weight: 800;
+            font-family: 'Playfair Display', serif;
+            flex-shrink: 0;
+        }
+
+        .logo-text h2 {
+            font-size: 1.15rem;
+            font-weight: 800;
+            color: var(--purple-dark);
+            line-height: 1.2;
+        }
+
+        .logo-text span {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 500;
+            color: var(--grey);
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .nav-menu a {
+            padding: 8px 14px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--grey-dark);
+            border-radius: var(--radius-sm);
+            position: relative;
+        }
+
+        .nav-menu a:hover,
+        .nav-menu a.active {
+            color: var(--purple);
+            background-color: var(--purple-pale);
+        }
+
+        .nav-cta {
+            background-color: var(--purple) !important;
+            color: var(--white) !important;
+            padding: 10px 22px !important;
+            border-radius: 50px !important;
+            font-weight: 600 !important;
+            margin-left: 8px;
+        }
+
+        .nav-cta:hover {
+            background-color: var(--purple-dark) !important;
+            transform: translateY(-1px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .hamburger {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--purple-dark);
+            cursor: pointer;
+            padding: 8px;
+        }
+
+        /* ===== PAGE HERO ===== */
+        .page-hero {
+            background: linear-gradient(135deg, rgba(92, 53, 117, 0.93), rgba(123, 75, 154, 0.88)), url('https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1600&q=80') center/cover no-repeat;
+            color: var(--white);
+            padding: 100px 0 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .page-hero::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 60px;
+            background: linear-gradient(to top, var(--white), transparent);
+            pointer-events: none;
+        }
+
+        .page-hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .page-hero h1 {
+            font-size: 3rem;
+            color: var(--white);
+            margin-bottom: 16px;
+            letter-spacing: -0.5px;
+        }
+
+        .page-hero p {
+            font-size: 1.1rem;
+            color: rgba(255,255,255,0.9);
+            max-width: 650px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        .breadcrumb {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+            font-size: 0.85rem;
+            color: rgba(255,255,255,0.7);
+        }
+
+        .breadcrumb a {
+            color: rgba(255,255,255,0.8);
+        }
+
+        .breadcrumb a:hover {
+            color: var(--white);
+        }
+
+        .breadcrumb i {
+            font-size: 0.6rem;
+        }
+
+        /* ===== SECTION HEADERS ===== */
+        .section-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 40px;
+        }
+
+        .section-label {
+            display: inline-block;
+            background-color: var(--purple-pale);
+            color: var(--purple);
+            padding: 6px 18px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+
+        .section-header h2 {
+            font-size: 2.4rem;
+            margin-bottom: 16px;
+            color: var(--text-dark);
+        }
+
+        .section-header p {
+            font-size: 1.05rem;
+            color: var(--grey);
+        }
+
+        /* ===== FEATURED ARTICLE ===== */
+        .featured-section {
+            padding-bottom: 20px;
+        }
+
+        .featured-article {
+            display: grid;
+            grid-template-columns: 1.3fr 1fr;
+            gap: 0;
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            background-color: var(--white);
+            border: 1px solid rgba(0,0,0,0.04);
+        }
+
+        .featured-image {
+            position: relative;
+            overflow: hidden;
+            min-height: 400px;
+        }
+
+        .featured-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .featured-article:hover .featured-image img {
+            transform: scale(1.03);
+        }
+
+        .featured-badge {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: var(--purple);
+            color: var(--white);
+            padding: 8px 18px;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            z-index: 2;
+        }
+
+        .featured-content {
+            padding: 50px 45px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .featured-meta {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            font-size: 0.82rem;
+            color: var(--grey);
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+        }
+
+        .featured-meta span {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .featured-meta i {
+            color: var(--purple);
+            font-size: 0.8rem;
+        }
+
+        .featured-content h2 {
+            font-size: 1.9rem;
+            margin-bottom: 18px;
+            line-height: 1.3;
+        }
+
+        .featured-content p {
+            font-size: 1rem;
+            color: var(--text-body);
+            margin-bottom: 26px;
+            line-height: 1.8;
+        }
+
+        .read-more-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--purple);
+            font-weight: 600;
+            font-size: 0.95rem;
+            align-self: flex-start;
+        }
+
+        .read-more-btn i {
+            transition: var(--transition);
+        }
+
+        .read-more-btn:hover {
+            gap: 14px;
+        }
+
+        /* ===== FILTER BUTTONS ===== */
+        .filter-bar {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 48px;
+        }
+
+        .filter-btn {
+            padding: 10px 24px;
+            border-radius: 50px;
+            background-color: var(--white);
+            color: var(--grey-dark);
+            border: 1.5px solid rgba(0,0,0,0.08);
+            font-weight: 600;
+            font-size: 0.88rem;
+            cursor: pointer;
+            transition: var(--transition);
+            font-family: 'Inter', sans-serif;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background-color: var(--purple);
+            color: var(--white);
+            border-color: var(--purple);
+            box-shadow: var(--shadow-md);
+            transform: translateY(-1px);
+        }
+
+        /* ===== NEWS GRID ===== */
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .news-card {
+            background-color: var(--white);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            border: 1px solid rgba(0,0,0,0.04);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .news-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-lg);
+            border-color: rgba(123, 75, 154, 0.2);
+        }
+
+        .news-image {
+            position: relative;
+            height: 210px;
+            overflow: hidden;
+        }
+
+        .news-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .news-card:hover .news-image img {
+            transform: scale(1.06);
+        }
+
+        .news-category {
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            background-color: var(--purple);
+            color: var(--white);
+            padding: 6px 14px;
+            border-radius: 50px;
+            font-size: 0.72rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .news-content {
+            padding: 28px 24px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .news-meta {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            font-size: 0.8rem;
+            color: var(--grey);
+            margin-bottom: 12px;
+        }
+
+        .news-meta span {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .news-meta i {
+            color: var(--purple);
+            font-size: 0.75rem;
+        }
+
+        .news-content h3 {
+            font-size: 1.15rem;
+            margin-bottom: 12px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            line-height: 1.4;
+            color: var(--text-dark);
+        }
+
+        .news-content p {
+            font-size: 0.9rem;
+            color: var(--grey);
+            margin-bottom: 18px;
+            line-height: 1.7;
+            flex-grow: 1;
+        }
+
+        .news-link {
+            color: var(--purple);
+            font-weight: 600;
+            font-size: 0.88rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            align-self: flex-start;
+        }
+
+        .news-link:hover {
+            gap: 10px;
+        }
+
+        /* ===== UPCOMING EVENTS ===== */
+        .events-section {
+            background-color: var(--grey-light);
+        }
+
+        .events-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 950px;
+            margin: 0 auto;
+        }
+
+        .event-item {
+            display: grid;
+            grid-template-columns: 110px 1fr auto;
+            gap: 30px;
+            align-items: center;
+            background-color: var(--white);
+            padding: 26px 30px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            border-left: 5px solid var(--purple);
+        }
+
+        .event-item:hover {
+            transform: translateX(6px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .event-date {
+            text-align: center;
+            padding-right: 20px;
+            border-right: 1px solid rgba(0,0,0,0.08);
+        }
+
+        .event-date .day {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--purple);
+            font-family: 'Playfair Display', serif;
+            line-height: 1;
+        }
+
+        .event-date .month {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--grey);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 4px;
+        }
+
+        .event-info h3 {
+            font-size: 1.15rem;
+            margin-bottom: 6px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+        }
+
+        .event-info p {
+            font-size: 0.9rem;
+            color: var(--grey);
+        }
+
+        .event-info .event-location {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.85rem;
+            color: var(--purple);
+            margin-top: 6px;
+            font-weight: 500;
+        }
+
+        .event-cta {
+            background-color: var(--purple-pale);
+            color: var(--purple-dark);
+            padding: 10px 22px;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: var(--transition);
+        }
+
+        .event-cta:hover {
+            background-color: var(--purple);
+            color: var(--white);
+        }
+
+        /* ===== NEWSLETTER ===== */
+        .newsletter-section {
+            background: linear-gradient(135deg, rgba(92, 53, 117, 0.95), rgba(123, 75, 154, 0.9)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1600&q=80') center/cover no-repeat fixed;
+            color: var(--white);
+            padding: 80px 0;
+        }
+
+        .newsletter-content {
+            max-width: 650px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .newsletter-content .section-label {
+            background-color: rgba(255,255,255,0.15);
+            color: var(--white);
+        }
+
+        .newsletter-content h2 {
+            color: var(--white);
+            font-size: 2.2rem;
+            margin-bottom: 16px;
+        }
+
+        .newsletter-content p {
+            color: rgba(255,255,255,0.85);
+            font-size: 1.02rem;
+            margin-bottom: 32px;
+        }
+
+        .newsletter-form {
+            display: flex;
+            gap: 12px;
+            max-width: 520px;
+            margin: 0 auto;
+        }
+
+        .newsletter-form input {
+            flex: 1;
+            padding: 16px 24px;
+            border-radius: 50px;
+            border: 1px solid rgba(255,255,255,0.25);
+            background-color: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            color: var(--white);
+            font-size: 0.95rem;
+            font-family: 'Inter', sans-serif;
+            outline: none;
+            transition: var(--transition);
+        }
+
+        .newsletter-form input::placeholder {
+            color: rgba(255,255,255,0.6);
+        }
+
+        .newsletter-form input:focus {
+            border-color: var(--white);
+            background-color: rgba(255,255,255,0.15);
+        }
+
+        .newsletter-form button {
+            padding: 16px 32px;
+            border-radius: 50px;
+            background-color: var(--white);
+            color: var(--purple-dark);
+            font-weight: 700;
+            font-size: 0.95rem;
+            border: none;
+            cursor: pointer;
+            transition: var(--transition);
+            font-family: 'Inter', sans-serif;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            white-space: nowrap;
+        }
+
+        .newsletter-form button:hover {
+            background-color: #f0e6f5;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        }
+
+        /* ===== EMPTY STATE ===== */
+        .empty-state {
+            text-align: center;
+            padding: 60px 20px;
+            display: none;
+        }
+
+        .empty-state i {
+            font-size: 3rem;
+            color: var(--purple-light);
+            margin-bottom: 16px;
+        }
+
+        .empty-state p {
+            color: var(--grey);
+            font-size: 1rem;
+        }
+
+        /* ===== CTA STRIP ===== */
+        .cta-strip {
+            background: linear-gradient(135deg, rgba(92, 53, 117, 0.92), rgba(123, 75, 154, 0.88)), url('https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=1600&q=80') center/cover no-repeat;
+            padding: 70px 0;
+            text-align: center;
+            color: var(--white);
+        }
+
+        .cta-strip h2 {
+            color: var(--white);
+            font-size: 2.2rem;
+            margin-bottom: 16px;
+        }
+
+        .cta-strip p {
+            color: rgba(255,255,255,0.85);
+            font-size: 1.05rem;
+            margin-bottom: 32px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 14px 32px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: var(--transition);
+        }
+
+        .btn-primary {
+            background-color: var(--white);
+            color: var(--purple-dark);
+        }
+
+        .btn-primary:hover {
+            background-color: #f0e6f5;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--white);
+            border-color: rgba(255,255,255,0.5);
+        }
+
+        .btn-outline:hover {
+            background-color: rgba(255,255,255,0.1);
+            border-color: var(--white);
+            transform: translateY(-2px);
+        }
+
+        /* ===== FOOTER ===== */
+        .footer {
+            background-color: #1A1025;
+            color: rgba(255,255,255,0.75);
+            padding: 70px 0 0;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1.5fr;
+            gap: 40px;
+            padding-bottom: 50px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .footer-brand .logo-text h2 {
+            color: var(--white);
+        }
+
+        .footer-brand .logo-text span {
+            color: rgba(255,255,255,0.5);
+        }
+
+        .footer-brand p {
+            margin-top: 18px;
+            font-size: 0.9rem;
+            line-height: 1.8;
+            max-width: 320px;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 12px;
+            margin-top: 22px;
+        }
+
+        .footer-social a {
+            width: 38px;
+            height: 38px;
+            background-color: rgba(255,255,255,0.08);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255,255,255,0.7);
+            font-size: 0.95rem;
+        }
+
+        .footer-social a:hover {
+            background-color: var(--purple);
+            color: var(--white);
+            transform: translateY(-2px);
+        }
+
+        .footer h4 {
+            color: var(--white);
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            letter-spacing: 0.5px;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .footer-links a {
+            font-size: 0.9rem;
+            color: rgba(255,255,255,0.65);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .footer-links a:hover {
+            color: var(--white);
+            padding-left: 4px;
+        }
+
+        .footer-contact {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .footer-contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            font-size: 0.9rem;
+        }
+
+        .footer-contact-item i {
+            color: var(--purple-light);
+            margin-top: 4px;
+            font-size: 0.95rem;
+        }
+
+        .footer-bottom {
+            padding: 24px 0;
+            text-align: center;
+            font-size: 0.85rem;
+            color: rgba(255,255,255,0.45);
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 1024px) {
+            .page-hero h1 { font-size: 2.5rem; }
+            .featured-article { grid-template-columns: 1fr; }
+            .featured-image { min-height: 300px; }
+            .news-grid { grid-template-columns: repeat(2, 1fr); }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+        }
+
+        @media (max-width: 768px) {
+            .top-bar .container { justify-content: center; text-align: center; }
+            .top-bar-left { justify-content: center; }
+            .top-bar-right { justify-content: center; }
+            
+            .nav-menu {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background-color: var(--white);
+                flex-direction: column;
+                padding: 16px 24px 24px;
+                box-shadow: var(--shadow-md);
+                gap: 4px;
+            }
+            .nav-menu.open { display: flex; }
+            .nav-menu a { width: 100%; padding: 12px 16px; }
+            .nav-cta { text-align: center; justify-content: center; margin-left: 0 !important; margin-top: 8px; }
+            .hamburger { display: block; }
+            .navbar .container { position: relative; }
+
+            .page-hero { padding: 70px 0 60px; }
+            .page-hero h1 { font-size: 2rem; }
+            .page-hero p { font-size: 1rem; }
+
+            .section-header h2 { font-size: 1.8rem; }
+            .section-padding { padding: 60px 0; }
+
+            .featured-content { padding: 35px 28px; }
+            .featured-content h2 { font-size: 1.5rem; }
+
+            .news-grid { grid-template-columns: 1fr; }
+            .event-item { grid-template-columns: 1fr; gap: 16px; text-align: left; }
+            .event-date { border-right: none; border-bottom: 1px solid rgba(0,0,0,0.08); padding: 0 0 14px; text-align: left; }
+            .event-date .day { display: inline-block; }
+            .event-date .month { display: inline-block; margin-left: 8px; }
+
+            .newsletter-form { flex-direction: column; }
+            .newsletter-form button { justify-content: center; width: 100%; }
+
+            .footer-grid { grid-template-columns: 1fr; gap: 30px; }
+            .hero-buttons { flex-direction: column; align-items: center; }
+        }
+
+        @media (max-width: 480px) {
+            .page-hero h1 { font-size: 1.7rem; }
+            .btn { width: 100%; justify-content: center; }
+            .logo-text h2 { font-size: 1rem; }
+            .logo-icon { width: 40px; height: 40px; font-size: 1.1rem; }
+            .filter-btn { padding: 8px 18px; font-size: 0.82rem; }
+            .event-item { padding: 22px 20px; }
+        }
+
+        /* ===== ANIMATIONS ===== */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== TOP BAR ===== -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+                <a href="tel:+256700000000"><i class="fas fa-phone"></i> +256 700 000 000</a>
+                <a href="mailto:info@kasubiparents.ac.ug"><i class="fas fa-envelope"></i> info@kasubiparents.ac.ug</a>
+            </div>
+            <div class="top-bar-right">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="{% url 'home' %}" class="logo">
+                <div class="logo-icon">K</div>
+                <div class="logo-text">
+                    <h2>Kasubi Parents School</h2>
+                    <span>Rubaga Division, Kampala</span>
+                </div>
+            </a>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="nav-menu" id="navMenu">
+                <a href="{% url 'home' %}">Home</a>
+                <a href="{% url 'about' %}">About Us</a>
+                <a href="{% url 'academics' %}">Academics</a>
+                <a href="{% url 'gallery' %}">Gallery</a>
+                <a href="{% url 'news' %}" class="active">News</a>
+                <a href="{% url 'partnerships' %}">Partnerships</a>
+                <a href="{% url 'contact' %}">Contact Us</a>
+                <a href="{% url 'apply' %}" class="nav-cta">Apply Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== PAGE HERO ===== -->
+    <header class="page-hero">
+        <div class="container page-hero-content">
+            <div class="breadcrumb">
+                <a href="{% url 'home' %}">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>News</span>
+            </div>
+            <h1>News & Events</h1>
+            <p>
+                Stay up to date with the latest announcements, academic achievements, 
+                upcoming events, and stories from our school community.
+            </p>
+        </div>
+    </header>
+
+    <!-- ===== FEATURED ARTICLE ===== -->
+    <section class="section-padding featured-section">
+        <div class="container">
+            <div class="featured-article fade-in">
+                <div class="featured-image">
+                    <span class="featured-badge">Featured Story</span>
+                    <img src="https://res.cloudinary.com/incarr/image/upload/v1790172397/aa_vcqlwo.png" alt="Featured news story">
+                </div>
+                <div class="featured-content">
+                    <div class="featured-meta">
+                        <span><i class="fas fa-calendar-alt"></i> Coming Soon</span>
+                        <span><i class="fas fa-tag"></i> Announcement</span>
+                    </div>
+                    <h2>Welcome to Our New School Website</h2>
+                    <p>
+                        We are delighted to launch our brand-new website — a digital home where 
+                        parents, students, and partners can learn more about Kasubi Parents 
+                        Secondary School, our programs, achievements, and upcoming events. Explore 
+                        our academic offerings, browse the gallery, and get in touch with us.
+                    </p>
+                    <a href="#" class="read-more-btn">
+                        Read Full Story <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== NEWS & ARTICLES ===== -->
+    <section class="section-padding" style="padding-top: 30px;">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">Latest Updates</span>
+                <h2>News & Articles</h2>
+                <p>Browse our latest news, announcements, and stories from around the school.</p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="filter-bar fade-in">
+                <button class="filter-btn active" data-filter="all">All News</button>
+                <button class="filter-btn" data-filter="announcements">Announcements</button>
+                <button class="filter-btn" data-filter="academics">Academics</button>
+                <button class="filter-btn" data-filter="events">Events</button>
+                <button class="filter-btn" data-filter="achievements">Achievements</button>
+                <button class="filter-btn" data-filter="sports">Sports</button>
+            </div>
+
+            <!-- News Grid -->
+            <div class="news-grid" id="newsGrid">
+
+                <article class="news-card fade-in" data-category="achievements">
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&q=80" alt="UNEB Results">
+                        <span class="news-category">Achievements</span>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span><i class="fas fa-calendar-alt"></i> Coming Soon</span>
+                        </div>
+                        <h3>Outstanding UNEB Performance in UCE & UACE</h3>
+                        <p>We are proud to announce another year of excellent results in both O-Level and A-Level national examinations...</p>
+                        <a href="#" class="news-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="news-card fade-in" data-category="academics">
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=600&q=80" alt="Science Lab Equipment">
+                        <span class="news-category">Academics</span>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span><i class="fas fa-calendar-alt"></i> Coming Soon</span>
+                        </div>
+                        <h3>New Science Laboratory Equipment Installed</h3>
+                        <p>Our science department has received new laboratory equipment to enhance practical learning for all students...</p>
+                        <a href="#" class="news-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="news-card fade-in" data-category="sports">
+                    <div class="news-image">
+                        <img src="https://res.cloudinary.com/incarr/image/upload/v1790172397/aa_vcqlwo.png" alt="Sports Day">
+                        <span class="news-category">Sports</span>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span><i class="fas fa-calendar-alt"></i> Coming Soon</span>
+                        </div>
+                        <h3>Annual Inter-House Sports Competition</h3>
+                        <p>Join us for our annual inter-house sports competition featuring football, athletics, netball, and more...</p>
+                        <a href="#" class="news-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="news-card fade-in" data-category="announcements">
+                    <div class="news-image">
+                        <img src="https://res.cloudinary.com/incarr/image/upload/v1790172397/aa_vcqlwo.png" alt="Admissions Open">
+                        <span class="news-category">Announcements</span>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span><i class="fas fa-calendar-alt"></i> Coming Soon</span>
+                        </div>
+                        <h3>Admissions Now Open for the New Academic Year</h3>
+                        <p>We are now accepting applications for Senior One to Senior Six for the upcoming academic year. Apply today...</p>
+                        <a href="#" class="news-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="news-card fade-in" data-category="events">
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&q=80" alt="Prize Giving Day">
+                        <span class="news-category">Events</span>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span><i class="fas fa-calendar-alt"></i> Coming Soon</span>
+                        </div>
+                        <h3>Prize Giving Day & Recognition Ceremony</h3>
+                        <p>Join us as we celebrate our top-performing students in academics, sports, and leadership at our annual Prize Giving Day...</p>
+                        <a href="#" class="news-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="news-card fade-in" data-category="academics">
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&q=80" alt="Career Day">
+                        <span class="news-category">Academics</span>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span><i class="fas fa-calendar-alt"></i> Coming Soon</span>
+                        </div>
+                        <h3>Career Guidance Day for A-Level Students</h3>
+                        <p>A special career guidance session for our A-Level students, featuring guest speakers and university representatives...</p>
+                        <a href="#" class="news-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="news-card fade-in" data-category="announcements">
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=600&q=80" alt="Boarding Facilities">
+                        <span class="news-category">Announcements</span>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span><i class="fas fa-calendar-alt"></i> Coming Soon</span>
+                        </div>
+                        <h3>Boarding Section Upgrades & Improvements</h3>
+                        <p>We have made significant improvements to our boarding facilities to ensure our students enjoy a comfortable and supportive stay...</p>
+                        <a href="#" class="news-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="news-card fade-in" data-category="events">
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=600&q=80" alt="Cultural Day">
+                        <span class="news-category">Events</span>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span><i class="fas fa-calendar-alt"></i> Coming Soon</span>
+                        </div>
+                        <h3>Cultural Day Celebration & Talent Show</h3>
+                        <p>A day of cultural performances, traditional dance, music, and food as we celebrate the diverse heritage of our school community...</p>
+                        <a href="#" class="news-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="news-card fade-in" data-category="achievements">
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=600&q=80" alt="Debate Competition">
+                        <span class="news-category">Achievements</span>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span><i class="fas fa-calendar-alt"></i> Coming Soon</span>
+                        </div>
+                        <h3>Debate Team Wins Regional Championship</h3>
+                        <p>Our school debate team has emerged victorious at the regional debate championship, showcasing excellent critical thinking and communication skills...</p>
+                        <a href="#" class="news-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- Empty State -->
+            <div class="empty-state" id="emptyState">
+                <i class="fas fa-newspaper"></i>
+                <p>No news found in this category.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== UPCOMING EVENTS ===== -->
+    <section class="section-padding events-section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-label">Mark Your Calendar</span>
+                <h2>Upcoming Events</h2>
+                <p>Important dates and events coming up at Kasubi Parents Secondary School.</p>
+            </div>
+            <div class="events-list">
+                <div class="event-item fade-in">
+                    <div class="event-date">
+                        <div class="day">15</div>
+                        <div class="month">Term 1</div>
+                    </div>
+                    <div class="event-info">
+                        <h3>Beginning of Term One</h3>
+                        <p>Reporting day for all students — both day and boarding sections.</p>
+                        <span class="event-location"><i class="fas fa-location-dot"></i> School Campus</span>
+                    </div>
+                    <a href="#" class="event-cta">Details <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="event-item fade-in">
+                    <div class="event-date">
+                        <div class="day">28</div>
+                        <div class="month">Term 1</div>
+                    </div>
+                    <div class="event-info">
+                        <h3>Parents' Meeting & Orientation</h3>
+                        <p>A meeting for all parents and guardians to discuss the term's academic plans and school activities.</p>
+                        <span class="event-location"><i class="fas fa-location-dot"></i> Main Hall</span>
+                    </div>
+                    <a href="#" class="event-cta">Details <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="event-item fade-in">
+                    <div class="event-date">
+                        <div class="day">10</div>
+                        <div class="month">Term 2</div>
+                    </div>
+                    <div class="event-info">
+                        <h3>Mid-Term Examinations Begin</h3>
+                        <p>Mid-term assessments for all classes from Senior One to Senior Six.</p>
+                        <span class="event-location"><i class="fas fa-location-dot"></i> Examination Halls</span>
+                    </div>
+                    <a href="#" class="event-cta">Details <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="event-item fade-in">
+                    <div class="event-date">
+                        <div class="day">22</div>
+                        <div class="month">Term 2</div>
+                    </div>
+                    <div class="event-info">
+                        <h3>Annual Sports Day</h3>
+                        <p>Inter-house sports competition featuring football, athletics, netball, volleyball, and more.</p>
+                        <span class="event-location"><i class="fas fa-location-dot"></i> School Sports Grounds</span>
+                    </div>
+                    <a href="#" class="event-cta">Details <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== NEWSLETTER ===== -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content fade-in">
+                <span class="section-label">Stay Connected</span>
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>Get the latest news, events, and updates from Kasubi Parents Secondary School delivered straight to your inbox.</p>
+                <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing! (Demo only)'); this.reset();">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit"><i class="fas fa-paper-plane"></i> Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA STRIP ===== -->
+    <section class="cta-strip">
+        <div class="container fade-in">
+            <h2>Have a Story to Share?</h2>
+            <p>We love hearing from our school community. If you have news, achievements, or events to share, get in touch with us.</p>
+            <div class="hero-buttons">
+                <a href="{% url 'contact' %}" class="btn btn-primary">
+                    <i class="fas fa-envelope"></i> Contact Us
+                </a>
+                <a href="{% url 'apply' %}" class="btn btn-outline" style="border-color: rgba(255,255,255,0.5);">
+                    <i class="fas fa-pen-to-square"></i> Apply Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-icon">K</div>
+                        <div class="logo-text">
+                            <h2>Kasubi Parents Secondary School</h2>
+                            <span>Rubaga Division, Kampala</span>
+                        </div>
+                    </div>
+                    <p>
+                        A licensed day and boarding secondary school along Nabulagala Road in the 
+                        Rubaga Division of Kampala — offering O-Level and A-Level education rooted 
+                        in strong academics, character, and community.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <div class="footer-links">
+                        <a href="{% url 'about' %}"><i class="fas fa-chevron-right"></i> About Us</a>
+                        <a href="{% url 'academics' %}"><i class="fas fa-chevron-right"></i> Academics</a>
+                        <a href="{% url 'apply' %}"><i class="fas fa-chevron-right"></i> Admissions</a>
+                        <a href="{% url 'gallery' %}"><i class="fas fa-chevron-right"></i> Gallery</a>
+                        <a href="{% url 'news' %}"><i class="fas fa-chevron-right"></i> News</a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Our School</h4>
+                    <div class="footer-links">
+                        <a href="{% url 'partnerships' %}"><i class="fas fa-chevron-right"></i> Partnerships</a>
+                        <a href="{% url 'contact' %}"><i class="fas fa-chevron-right"></i> Contact Us</a>
+                        <a href="#"><i class="fas fa-chevron-right"></i> Day & Boarding</a>
+                        <a href="#"><i class="fas fa-chevron-right"></i> O & A-Level</a>
+                        <a href="#"><i class="fas fa-chevron-right"></i> Co-Curricular</a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Contact Info</h4>
+                    <div class="footer-contact">
+                        <div class="footer-contact-item">
+                            <i class="fas fa-location-dot"></i>
+                            <span>Nabulagala Road, Rubaga Division<br>Kampala, Uganda</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+256 700 000 000</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@kasubiparents.ac.ug</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Mon – Fri: 8:00 AM – 5:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Kasubi Parents Secondary School. All Rights Reserved. | Licensed by the Ministry of Education and Sports.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== JAVASCRIPT ===== -->
+    <script>
+        // ===== Mobile Menu =====
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('open');
+            const icon = hamburger.querySelector('i');
+            if (navMenu.classList.contains('open')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        navMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('open');
+                const icon = hamburger.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            });
+        });
+
+        // ===== Fade In =====
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // ===== News Filter =====
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const newsCards = document.querySelectorAll('.news-card');
+        const emptyState = document.getElementById('emptyState');
+
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterButtons.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const filter = btn.dataset.filter;
+                let visibleCount = 0;
+
+                newsCards.forEach(card => {
+                    if (filter === 'all' || card.dataset.category === filter) {
+                        card.style.display = 'flex';
+                        card.classList.add('visible');
+                        visibleCount++;
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+
+                emptyState.style.display = visibleCount === 0 ? 'block' : 'none';
+            });
+        });
+    </script>
+
+</body>
+</html>
